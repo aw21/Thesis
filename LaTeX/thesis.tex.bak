@@ -1,0 +1,50 @@
+\documentclass[12pt,lot,lof]{puthesis_undergraduate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{graphicx}
+%\usepackage{setspace}
+\usepackage[round, longnamesfirst]{natbib} % for nice bibliography
+
+\input{newcommands}
+
+%Do not un-comment the next two lines
+%Included for Gather Purpose only in WinEdt (ignore for other editors):
+%input "./Bibliography/refs.bib"
+
+\title{Operations Research and Financial Engineering-Inspired Thesis: A Thesis
+about Operations Research and Financial Engineering}
+\submitted{May 2007}  %graduation date
+\author{Joe McStudent}
+\advisor{Professor Very Important} %
+\dedication{To me}
+
+
+\abstract{
+\input{./Chapters/abstract}
+}
+
+\acknowledgements{
+\input{./Chapters/acknow}
+}
+
+\begin{document}
+\chapter{Introduction}\label{ch:intro}  %insert chapter title
+\input{./Chapters/intro} % and path to the .tex file (no need to include .tex)
+
+\chapter{Development of the Department of Operations Research and Financial Engineering}  %continue adding chapter titles
+\input{./Chapters/development}
+
+\chapter{Analysis of Problem}
+\input{./Chapters/analysis}
+
+\appendix
+\chapter{Code}
+\input{./Chapters/code}
+
+
+\bibliographystyle{apa}
+\bibliography{./Bibliography/refs} \label{bib}
+\end{document}

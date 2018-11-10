@@ -1,0 +1,2306 @@
+This file was created with JabRef 2.1 beta.
+Encoding: Cp1252
+
+@UNPUBLISHED{C06,
+  author = {Erhan \c{C}inlar},
+  title = {Notes on Branching Processes},
+  note = {Lecture notes for ORF 309/MAT 309. Princeton University},
+  month = {November},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {C:\Documents and Settings\evanp\My Documents\Teaching\2006-2007\ORF 309\Course Material\Notes on Branching Processes - Erhan Cinlar.pdf},
+  timestamp = {2006.11.11}
+}
+
+@ARTICLE{Fraz06,
+  AUTHOR =       {Peter Frazier},
+  TITLE =        {A NiCe title},
+  JOURNAL =      {Journal of Everything},
+  YEAR =         {2006},
+  volume =       {12},
+  number =       {1},
+  pages =        {34--76},
+}
+
+
+@BOOK{C75,
+  title = {Introduction to Stochastic Processes},
+  publisher = {Prentice-Hall},
+  year = {1975},
+  author = {Erhan \c{C}inlar and Jin-Hee Kim},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOKLET{CV00,
+  title = {Real Analysis for Engineers},
+  author = {Erhan \c{C}inlar and Robert Vanderbei},
+  howpublished = {Downloadable at \href{http://www.princeton.edu/~rvdb/506book/book.pdf}
+
+     {http://www.princeton.edu/$\sim$rvdb/506book/book.pdf}},
+  month = {February},
+  year = {2000},
+  note = {Princeton University},
+  owner = {Evan Papageorgiou},
+  pdf = {C:\Documents and Settings\evanp\My Documents\Books, Lecture Notes\book.pdf},
+  timestamp = {2006.10.03}
+}
+
+@BOOK{O98,
+  title = {Stochastic Differential Equations: An Introduction with Applications},
+  publisher = {Springer},
+  year = {1998},
+  author = {Bernt {\O}ksendal},
+  edition = {5th}
+}
+
+@TECHREPORT{A04,
+  author = {Kjersti Aas},
+  title = {Modelling the dependence structure of financial assets: A survey
+    of four copulas},
+  institution = {Norwegian Computing Center},
+  year = {2004},
+  month = {December},
+  note = {SAMBA/22/04},
+  keywords = {copulas, dependence measures, gaussian, t-student, gumbel, clayton},
+  owner = {Evan Papageorgiou},
+  pdf = {SAMBA2204b.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{ACDV06,
+  author = {Claudio Albanese and Oliver Chen and Antonio Dalessandro and Alicia
+    Vidler},
+  title = {Dynamic Credit Correlation Modelling},
+  note = {Working paper, Imperial College London},
+  month = {May},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {5459906.PDF},
+  timestamp = {2006.09.26}
+}
+
+@UNPUBLISHED{ARS03,
+  author = {Edward Altman and Andrea Resti and Andrea Sironi},
+  title = {Default Recovery Rates in Credit Risk Modeling: A Review of the Literature
+    and Empirical Evidence},
+  note = {Working paper, New York University},
+  month = {December},
+  year = {2003},
+  owner = {Evan Papageorgiou},
+  pdf = {Review1.pdf},
+  timestamp = {2006.10.11}
+}
+
+@UNPUBLISHED{ARS01,
+  author = {Edward I. Altman and Andrea Resti and Andrea Sironi},
+  title = {Analyzing and Explaining Default Recovery Rates},
+  note = {Working paper, New York University},
+  month = {December},
+  year = {2001},
+  owner = {Evan Papageorgiou},
+  pdf = {Analyzing_Recovery_rates_010702.pdf},
+  timestamp = {2006.10.11}
+}
+
+@BOOK{A01,
+  title = {Credit Risk Valuation},
+  publisher = {Springer},
+  year = {2001},
+  author = {Manuel Ammann},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@UNPUBLISHED{A06,
+  author = {Leif Andersen},
+  title = {Portfolio Losses in Factor Models: Term Structures and Intertemporal
+    Loss Dependence},
+  note = {Working paper, Bank of America},
+  month = {September},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Andersen\fact_new.pdf},
+  timestamp = {2006.09.18}
+}
+
+@ARTICLE{AS05,
+  author = {Leif Andersen and Jakob Sidenius},
+  title = {CDO pricing with factor models: survey and comments},
+  journal = {Journal of Credit Risk},
+  year = {2005},
+  volume = {1},
+  pages = {71--88},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.09}
+}
+
+@ARTICLE{AS04,
+  author = {Leif Andersen and Jakob Sidenius},
+  title = {Extensions to the Gaussian Copula: Random Recovery and Random Factor
+    Loadings},
+  journal = {Journal of Credit Risk},
+  year = {2004},
+  volume = {1},
+  pages = {29--70},
+  number = {1},
+  keywords = {copula, factor model, CDOs, Marshall-Olkin copula, Gaussian copula},
+  owner = {Evan Papageorgiou},
+  pdf = {Andersen\GaussExtensions6.pdf},
+  timestamp = {2006.05.31}
+}
+
+@ARTICLE{ASB03,
+  author = {Leif Andersen and Jakob Sidenius and Susanta Basu},
+  title = {All your hedges in one basket},
+  journal = {Risk},
+  year = {2003},
+  volume = {November},
+  pages = {67--72},
+  keywords = {CDOs, copula, loss distribution},
+  owner = {Evan Papageorgiou},
+  pdf = {Andersen\And_Basu_Siden_Risk_03.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{AMM05,
+  author = {A. Antonov and S. Mechkov and T. Misirpashaev},
+  title = {Analytical techniques for synthetic CDOs and credit default risk
+    measures},
+  note = {Work in progress, NumeriX},
+  month = {May},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {CDOAnalyticsPaperNumeriXAMM.pdf},
+  timestamp = {2006.08.09}
+}
+
+@ARTICLE{AD95,
+  author = {Philippe Artzner and Freddy Delbaen},
+  title = {Default Risk Insurance and Incomplete Markets},
+  journal = {Mathematical Finance},
+  year = {1995},
+  volume = {5},
+  pages = {187--195},
+  number = {3},
+  keywords = {credit risk, compensator, incomplete markets, intensity process, totally
+    inaccessible stopping time},
+  owner = {Evan Papageorgiou},
+  pdf = {Artzner, Delbaen - Default Risk Insurance and Incomplete Markets.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{BMZ06,
+  author = {Gurdip Bakshi and Dilip Madan and Frank Zhang},
+  title = {Recovery Risk in Defaultable Debt Models: Empirical Comparisons and
+    Implied Recovery Rates},
+  note = {Working paper, University of Maryland},
+  month = {April},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {cfrss_2006_Bakshi.pdf},
+  timestamp = {2006.10.11}
+}
+
+@ARTICLE{BBC98,
+  author = {Emilio Barone and Giovanni Barone-Adesi and Antonio Castagna},
+  title = {Pricing bonds and bond options with default risk},
+  journal = {European Financial Management},
+  year = {1998},
+  volume = {4},
+  pages = {231--282},
+  number = {2},
+  keywords = {CIR, defaultable bonds, defaultable bond options},
+  owner = {Evan Papageorgiou},
+  pdf = {Barone\Bonds and Bond Options.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{B06,
+  author = {Erhan Bayraktar},
+  title = {A Note on Pricing Option on Defaultable Stocks},
+  note = {Working paper, University of Michigan},
+  month = {August},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {default-stock.pdf},
+  timestamp = {2006.09.14}
+}
+
+@ARTICLE{BS05,
+  author = {Dirk Becherer and Martin Schweizer},
+  title = {Classical Solutions to Reaction-Diffusion Systems for Hedging Problems
+    with Interacting It\^{o} and Point Processes},
+  journal = {Annals of Applied Probability},
+  year = {2005},
+  volume = {15},
+  pages = {1111--1144},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {1115137970.pdf},
+  timestamp = {2006.09.29}
+}
+
+@UNPUBLISHED{BBE06,
+  author = {Hatem Ben-Ameur and Damiano Brigo and Eymen Errais},
+  title = {A Dynamic Programming Approach for Pricing CDS and CDS Options},
+  note = {Working paper, HEC Montreal},
+  month = {March 18},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {cds_bermudan_032006.pdf},
+  timestamp = {2006.09.26}
+}
+
+@UNPUBLISHED{B05,
+  author = {Norddine Bennani},
+  title = {The Forward Loss Model: A Dynamic Term Structure Approach for the
+    Pricing of Portfolio Credit Derivatives},
+  note = {Working paper, Royal Bank of Scotland},
+  month = {November},
+  year = {2005},
+  keywords = {HJM, CDOs, options on CDOs},
+  owner = {Evan Papageorgiou},
+  pdf = {Bennani\FLM.pdf},
+  timestamp = {2006.06.01}
+}
+
+@ARTICLE{BLM05,
+  author = {Terry Benzschawel and Lorenzo Lorilla and Glen McDermott},
+  title = {Effects of Stochastic and Correlated Defaults and Recoveries on CDO
+    Tranche Returns},
+  journal = {Journal of Structured Finance},
+  year = {2005},
+  volume = {11},
+  pages = {44--63},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {JSF_SU_05_Benzschawel.pdf},
+  timestamp = {2006.11.16}
+}
+
+@UNPUBLISHED{BDDF04,
+  author = {Antje Berndt and Rohan Douglas and Darrell Duffie and Mark Ferguson
+    and David Schranz},
+  title = {Measuring Default Risk Premia for Default Swap Rates and EDFs},
+  note = {Working paper, Stanford University},
+  month = {March},
+  year = {2004},
+  keywords = {CDS, EDF, structural approach},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Berndt et.al - Measuring Default Risk Premia from Default Swap.pdf},
+  timestamp = {2006.06.11}
+}
+
+@BOOK{BNO03,
+  title = {Convex Analysis and Optimization},
+  publisher = {Athena Scientific},
+  year = {2003},
+  author = {Dimitri P. Bertsekas and Angelia Nedi\'{c} and Asuman E. Ozdaglar},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@INCOLLECTION{BJR04,
+  author = {Tomasz R. Bielecki and Monique Jeanblanc and Marek Rutkowski},
+  title = {Hedging of Defaultable Claims},
+  booktitle = {Paris-Princeton Lectures on Mathematical Finance},
+  publisher = {Princeton University Press},
+  year = {2004}
+}
+
+@BOOK{BR02,
+  title = {Credit Risk: Modeling, Valuation and Hedging},
+  publisher = {Springer},
+  year = {2002},
+  author = {Tomasz R. Bielecki and Marek Rutkowski}
+}
+
+@UNPUBLISHED{BVV06,
+  author = {Tomasz R. Bielecki and Andrea Vidozzi and Luca Vidozzi},
+  title = {An Efficient Approach to Valuation of Credit Basket Products and
+    Ratings Triggered Step-Up Bonds},
+  note = {Working paper, Illinois Institute of Technology},
+  month = {May},
+  year = {2006},
+  owner = {evanp},
+  pdf = {Bielecki\BVV1.pdf},
+  timestamp = {2006.06.09}
+}
+
+@BOOK{B95,
+  title = {Probability and Measure},
+  publisher = {Wiley},
+  year = {1995},
+  author = {Patrick Billingsley},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{BC76,
+  author = {Fisher Black and John Cox},
+  title = {Valuing Corporate Securities: Some Effects on Bond Indenture Provisions},
+  journal = {Journal of Finance},
+  year = {1976},
+  volume = {31},
+  pages = {351--367}
+}
+
+@ARTICLE{BK91,
+  author = {Fischer Black and Piotr Karasinski},
+  title = {Bond and Option Pricing when Short Rates are Lognormal},
+  journal = {Financial Analysts Journal},
+  year = {1991},
+  volume = {47},
+  pages = {52--59},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {black,karasinski.pdf},
+  timestamp = {2006.06.20}
+}
+
+@ARTICLE{BS73,
+  author = {Fisher Black and Myron Scholes},
+  title = {The pricing of options and corporate liabilities},
+  journal = {Journal of Political Economy},
+  year = {1973},
+  volume = {81},
+  pages = {637--654},
+  keywords = {Black-Scholes, options}
+}
+
+@ARTICLE{BBM05,
+  author = {Blanco, Roberto and Brennan, Simon and Marsh, Ian W.},
+  title = {An Empirical Analysis of the Dynamic Relation between Investment-Grade
+    Bonds and Credit Default Swaps},
+  journal = {Journal of Finance},
+  year = {2005},
+  volume = {60},
+  pages = {2255--2281},
+  number = {5},
+  keywords = {CDS, defaultable bonds, basis, credit spreads},
+  pdf = {Blanco\Blanco, Brennan and Marsh.pdf}
+}
+
+@UNPUBLISHED{B03,
+  author = {Christian Bluhm},
+  title = {CDO Modeling: Techniques, Examples and Applications},
+  note = {Work in progress, HypoVereinsbank},
+  month = {December},
+  year = {2003},
+  owner = {evanp},
+  pdf = {Bluhm\44.pdf},
+  timestamp = {2006.06.09}
+}
+
+@UNPUBLISHED{BC04,
+  author = {Damiano Brigo and Laurent Cousot},
+  title = {A Comparison between the stochastic intensity SSRD model and the
+    Market Model for CDS Options Pricing},
+  note = {Working paper, Banca IMI},
+  month = {September},
+  year = {2004},
+  keywords = {CDS options, CDS, shifted square root diffusion, implied volatility},
+  owner = {Evan Papageorgiou},
+  pdf = {Brigo\BrigoCousot_CDS_Options_091204.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{BM06,
+  title = {Interest Rate Models: Theory and Practice},
+  publisher = {Springer},
+  year = {2006},
+  author = {Damiano Brigo and Fabio Mercurio},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.10.09}
+}
+
+@BOOK{BM01,
+  title = {Interest Rate Models: Theory and Practice},
+  publisher = {Springer},
+  year = {2001},
+  author = {Damiano Brigo and Fabio Mercurio}
+}
+
+@UNPUBLISHED{BPT06,
+  author = {Damiano Brigo and Andrea Pallavicini and Roberto Torresetti},
+  title = {Calibration of CDO Tranches with the Dynamical Generalized-Poisson
+    Loss Model},
+  note = {Working paper, Banca IMI},
+  month = {May},
+  year = {2006},
+  keywords = {CDOs, loss distribution, generalized Poisson process},
+  owner = {Evan Papageorgiou},
+  pdf = {Brigo\gpl.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{BD91,
+  title = {Time Series: Theory and Methods},
+  publisher = {Springer},
+  year = {1991},
+  author = {Peter J. Brockwell and Richard A. Davis},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{B81,
+  title = {Point Processes and Queues: Martingale Dynamics},
+  publisher = {Springer},
+  year = {1981},
+  author = {Pierre Br{\'e}maud}
+}
+
+@UNPUBLISHED{BGL05,
+  author = {Xavier Burtschell and Jon Gregory and Jean-Paul Laurent},
+  title = {A Comparative Analysis of CDO Pricing Models},
+  note = {Working paper, BNP-Paribas},
+  month = {April},
+  year = {2005},
+  keywords = {CDOs, correlation, copulas, Clayton, Marshall-Olkin},
+  owner = {Evan Papageorgiou},
+  pdf = {Burtschell\jplaurentcomparative.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{BGL05a,
+  author = {Xavier Burtschell and Jon Gregory and Jean-Paul Laurent},
+  title = {Beyond the Gaussian Copula: Stochastic and Local Correlation},
+  note = {Working paper, BNP-Paribas},
+  month = {October},
+  year = {2005},
+  keywords = {CDOs, correlation smile, factor models, copulas, stochastic correlation},
+  owner = {Evan Papageorgiou},
+  pdf = {Burtschell\stochastic_local_correlation.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{C04,
+  title = {Interest Rate Models: An Introduction},
+  publisher = {Princeton University Press},
+  year = {2004},
+  author = {Andrew J. G. Cairns},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{CK99,
+  title = {Measure, Integral and Probability},
+  publisher = {Springer},
+  year = {1999},
+  author = {Marek Capi\'{n}ski and Peter Ekkehard Kopp},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{CZ00,
+  title = {Probability Through Problems},
+  publisher = {Springer},
+  year = {2000},
+  author = {Marek Capi\'{n}ski and Tomasz Zastawniak},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@UNPUBLISHED{CS06,
+  author = {Jessica Cariboni and Wim Schoutens},
+  title = {Jumps in Intensity Models},
+  note = {Working paper, Katholieke Universiteit Leuven},
+  month = {May},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {intensity.pdf},
+  timestamp = {2006.09.26}
+}
+
+@ARTICLE{CT04a,
+  author = {R\'{e}ne Carmona and Michael Tehranchi},
+  title = {A Characterization of Hedging Portfolios for Interest Rate Contingent
+    Claims},
+  journal = {Annals of Applied Probability},
+  year = {2004},
+  volume = {14},
+  pages = {1267--1294},
+  number = {3},
+  doi = {10.1214/105051604000000297},
+  owner = {Evan Papageorgiou},
+  pdf = {1089736285.pdf},
+  timestamp = {2006.08.07}
+}
+
+@UNPUBLISHED{CRT06,
+  author = {Alexander Chapovsky and Andrew Rennie and Pedro A. C. Tavares},
+  title = {Stochastic Intensity Modelling for Structured Credit Exotics},
+  note = {Working paper, Merrill Lynch},
+  month = {October},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {StochIntensityForBaskets.pdf},
+  timestamp = {2006.11.15}
+}
+
+@ARTICLE{CF05,
+  author = {Li Chen and Damir Filipovi\'{c}},
+  title = {A Simple Model for Credit Migration and Spread Curves},
+  journal = {Finance and Stochastics},
+  year = {2005},
+  volume = {9},
+  pages = {211--231},
+  number = {2},
+  doi = {10.1007/s00780-004-0140-9},
+  owner = {evanp},
+  pdf = {Chen\Chen, Filipovic - A Simple Model for Credit Migration and Spread Curves.pdf},
+  timestamp = {2006.06.09}
+}
+
+@ARTICLE{CS92,
+  author = {Ren-Raw Chen and Louis Scott},
+  title = {Pricing Interest Rate Options in a Two-Factor Cox-Ingersoll-Ross
+    Model of the Term Structure},
+  journal = {Review of Financial Studies},
+  year = {1992},
+  volume = {5},
+  pages = {613--636},
+  number = {4},
+  keywords = {CIR, bond options},
+  owner = {Evan Papageorgiou},
+  pdf = {Chen, Scott - Pricing Interest Rate Options in a Two-Factor CIR Model.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{C01,
+  title = {A Course in Probability Theory},
+  publisher = {Academic Press},
+  year = {2001},
+  author = {Kai Lai Chung},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@ARTICLE{CGH04,
+  author = {Pierre Collin-Dufresne and Robert Goldstein and Julien Hugonnier},
+  title = {A General Formula for Valuing Defaultable Derivatives},
+  journal = {Econometrica},
+  year = {2004},
+  volume = {72},
+  pages = {1377--1407},
+  number = {5},
+  owner = {Evan Papageorgiou},
+  pdf = {Dufresne\out.pdf},
+  timestamp = {2006.09.29}
+}
+
+@ARTICLE{CG02,
+  author = {Pierre Collin-Dufresne and Robert S. Goldstein},
+  title = {Pricing Swaptions Within an Affine Framework},
+  journal = {Journal of Derivatives},
+  year = {2002},
+  volume = {10},
+  pages = {1--18},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {Dufresne\PCDufresne, Goldstein.pdf},
+  timestamp = {2006.06.09}
+}
+
+@BOOK{CT04,
+  title = {Financial Modelling With Jump Processes},
+  publisher = {Chapman \& Hall/CRC},
+  year = {2004},
+  author = {Rama Cont and Peter Tankov},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{CFPS04,
+  author = {Peter Cotton and Jean-Pierre Fouque and George Papanicolaou and Ronnie
+    Sircar},
+  title = {Stochastic Volatility Corrections for Interest Rate Derivatives},
+  journal = {Mathematical Finance},
+  year = {2004},
+  volume = {14},
+  pages = {173--200},
+  number = {2},
+  keywords = {stochastic volatility, perturbations},
+  pdf = {Cotton\Cotton, et.al. - Stochastic Volatility Corrections for Interest Rate Derivatives.pdf}
+}
+
+@ARTICLE{CIR85,
+  author = {John C. Cox and Jonathan E. Ingersoll and Stephen A. Ross},
+  title = {A Theory of The Term Structure of Interest Rates},
+  journal = {Econometrica},
+  year = {1985},
+  volume = {53},
+  pages = {385--408},
+  number = {2},
+  keywords = {CIR, bond bond option, term structure},
+  pdf = {Cox\CIR - A Theory of the Term Structure of Interest Rates.pdf}
+}
+
+@ARTICLE{CIR85a,
+  author = {John C. Cox and Jonathan E. Ingersoll and Stephen A. Ross},
+  title = {An Intertemporal General Equilibrium Model of Asset Prices},
+  journal = {Econometrica},
+  year = {1985},
+  volume = {53},
+  pages = {363--384},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {Cox\CIR - A Intertemporal General Equilibrium Model of Asset Prices.pdf},
+  timestamp = {2006.06.09}
+}
+
+@BOOK{DJ03,
+  title = {Financial Markets in Continuous Time},
+  publisher = {Springer},
+  year = {2003},
+  author = {Rose-Anne Dana and Monique Jeanblanc},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{D95,
+  author = {Sanjiv Ranjan Das},
+  title = {Credit Risk Derivatives},
+  journal = {Journal of Derivatives},
+  year = {1995},
+  volume = {2},
+  pages = {7--23},
+  number = {3},
+  keywords = {structural approach, defaultable bond},
+  owner = {Evan Papageorgiou},
+  pdf = {Das\253146.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{DDKS05,
+  author = {Sanjiv R. Das and Darrell Duffie and Nikunj Kapadia and Leandro Saita},
+  title = {Common Failings: How Corporate Defaults are Correlated},
+  note = {Forthocoming in Journal of Finance},
+  month = {October},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Das et.al. - Common Failings How Crprt Dflts r Crrltd.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DFG01,
+  author = {Sanjiv R. Das and Gifford Fong and Gary Geng},
+  title = {Impact of Correlated Default Risk on Credit Portfolios},
+  journal = {Journal of Fixed Income},
+  year = {2001},
+  volume = {11},
+  pages = {9--19},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {JFI WI 01 Das_Fong_Geng.pdf},
+  timestamp = {2006.11.16}
+}
+
+@ARTICLE{DL01b,
+  author = {Mark Davis and Violet Lo},
+  title = {Infectious Defaults},
+  journal = {Quantitative Finance},
+  year = {2001},
+  volume = {1},
+  pages = {382--387},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {285096.pdf},
+  timestamp = {2006.08.25}
+}
+
+@UNPUBLISHED{GR06,
+  author = {G. {Di Graziano} and L.C.G. Rogers},
+  title = {A dynamic approach to the modelling of correlation credit derivatives
+    using Markov Chains},
+  note = {Working paper, University of Cambridge},
+  month = {October},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {cdo21.pdf},
+  timestamp = {2006.09.13}
+}
+
+@UNPUBLISHED{GR05,
+  author = {G. {Di Graziano} and L.C.G. Rogers},
+  title = {A new approach to the modelling and pricing of correlation credit
+    derivatives},
+  note = {Working paper, University of Cambridge},
+  month = {June},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {cdo12.pdf},
+  timestamp = {2006.08.03}
+}
+
+@UNPUBLISHED{DGHM05,
+  author = {Georges Dionne and Genevi\`{e}ve Gauthier and Khemais Hammami and
+    Mathieu Maurice and Jean-Guy Simonato},
+  title = {Default Risk in Corporate Yield Spreads},
+  note = {Working paper, HEC Montreal},
+  month = {November},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Dionne\Dionne et. al. - Default Risk in Corporate Yield Spreads.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{D05,
+  author = {Joost Driessen},
+  title = {Is Default Event Risk Priced in Corporate Bonds},
+  journal = {Review of Financial Studies},
+  year = {2005},
+  volume = {18},
+  pages = {165--195},
+  number = {1},
+  doi = {10.1093/rfs/hhi009},
+  owner = {Evan Papageorgiou},
+  pdf = {Driessen\165.pdf},
+  timestamp = {2006.06.09}
+}
+
+@ARTICLE{D99,
+  author = {Gregory R. Duffee},
+  title = {Estimating the Price of Default Risk},
+  journal = {Review of Financial Studies},
+  year = {1999},
+  volume = {12},
+  pages = {197--226},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffee\Duffee, Estimating the Price of Default Risk.pdf},
+  timestamp = {2006.06.09}
+}
+
+@ARTICLE{D99a,
+  author = {Darrell Duffie},
+  title = {Credit Swap Valuation},
+  journal = {Financial Analysts Journal},
+  year = {1999},
+  volume = {55},
+  pages = {73--87},
+  number = {1},
+  keywords = {CDS},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie - Credit Swap Valuation2.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{D96,
+  author = {Darrell Duffie},
+  title = {Special Repo Rates},
+  journal = {Journal of Finance},
+  year = {1996},
+  volume = {51},
+  pages = {493--526},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie - Special Repo Rates.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{DEHS06,
+  author = {Darrell Duffie and Andreas Eckner and Guillaume Horel and Leandro
+    Saita},
+  title = {Frailty Correlated Default},
+  note = {Working paper, Stanford University},
+  month = {May},
+  year = {2006},
+  keywords = {frailty, depedence default},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\FinanceSeminar06_Duffie.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DFS03,
+  author = {Darrell Duffie and Damir Filipovi\'{c} and Walter Schachermayer},
+  title = {Affine Processes and Applications in Finance},
+  journal = {Annals of Applied Probability},
+  year = {2003},
+  volume = {13},
+  pages = {984--1053},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie, Filipovic and Schachermayer.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DG01,
+  author = {Darrell Duffie and Nicolae G\^{a}rleanu},
+  title = {Risk and Valuation of Collateralized Debt Obligations},
+  journal = {Financial Analysts Journal},
+  year = {2001},
+  volume = {57},
+  pages = {41--59},
+  number = {1},
+  keywords = {CDO, intensity-based models},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie, Garleanu, Risk and Valuation of CDOs.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DL01,
+  author = {Darrell Duffie and David Lando},
+  title = {Term Structures of Credit Spreads with Incomplete Accounting Information},
+  journal = {Econometrica},
+  year = {2001},
+  volume = {69},
+  pages = {633--664},
+  number = {3},
+  keywords = {Structural approach, totally inaccessible stopping times, incomplete
+    information},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie Lando.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DL01a,
+  author = {Darrell Duffie and Jun Liu},
+  title = {Floating-Fixed Credit Spreads},
+  journal = {Financial Analysts Journal},
+  year = {2001},
+  volume = {57},
+  pages = {76--87},
+  number = {3},
+  pdf = {Duffie\Duffie, Liu - Floating-fixed credit spreads.pdf}
+}
+
+@ARTICLE{DPS00,
+  author = {Darrell Duffie and Jun Pan and Kenneth Singleton},
+  title = {Transform Analysis and Asset Pricing for Affine Jump-Diffusions},
+  journal = {Econometrica},
+  year = {2000},
+  volume = {68},
+  pages = {1343--1376},
+  number = {6},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie, Pan, Singleton - Transform Analysis.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DPS03,
+  author = {Darrell Duffie and Lasse Heje Pedersen and Kenneth J. Singleton},
+  title = {Modeling Sovereign Yield Spreads: A Case Study of Russian Debt},
+  journal = {Journal of Finance},
+  year = {2003},
+  volume = {58},
+  pages = {119--159},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\Duffie et al. - Modelling Sovereign Yield Spreads.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{DSS96,
+  author = {Darrell Duffie and Mark Schroder and Costis Skiadas},
+  title = {Recursive Valuation of Defaultable Securities and the Timing of Resolution
+    of Uncertainty},
+  journal = {Annals of Applied Probability},
+  year = {1996},
+  volume = {6},
+  pages = {1075--1090},
+  number = {4},
+  pdf = {Duffie\Duffie et. al. - Recursive Valuation of Defaultable Securities and The Timing of Resolution of Uncertainty.pdf}
+}
+
+@UNPUBLISHED{DS99,
+  author = {Darrell Duffie and Kenneth Singleton},
+  title = {Simulating Correlated Defaults},
+  note = {Working paper, Stanford University},
+  month = {May},
+  year = {1999},
+  owner = {Evan Papageorgiou},
+  pdf = {Duffie\credit_ddks.pdf},
+  timestamp = {2006.06.11}
+}
+
+@BOOK{DS03,
+  title = {Credit Risk: Pricing, Measurement and Management},
+  publisher = {Princeton University Press},
+  year = {2003},
+  author = {Darrell Duffie and Kenneth J. Singleton}
+}
+
+@ARTICLE{DS99a,
+  author = {Darrell Duffie and Kenneth J. Singleton},
+  title = {Modeling Term Structures of Defaultable Bonds},
+  journal = {Review of Financial Studies},
+  year = {1999},
+  volume = {12},
+  pages = {687--720},
+  number = {4},
+  pdf = {Duffie\Duffie Singleton - Modeling Term Structures of Defaultable Bonds.pdf}
+}
+
+@ARTICLE{DS97,
+  author = {Darrell Duffie and Kenneth J. Singleton},
+  title = {An Econometric Model of the Term Structure of Interest-Rate Swap
+    Yields},
+  journal = {Journal of Finance},
+  year = {1997},
+  volume = {52},
+  pages = {1287--1321},
+  number = {4},
+  pdf = {Duffie\Duffie Singleton - An Econometric Model of the Term Structure of Interest-Rate Swap Yields.pdf}
+}
+
+@UNPUBLISHED{E05,
+  author = {Abel Elizalde},
+  title = {Credit Risk Models I: Default Correlation in Intensity Models},
+  note = {Working paper, CEMFI and UPNA},
+  month = {December},
+  year = {2005},
+  keywords = {Intensity-based models, default correlation, contagion, copula},
+  owner = {Evan Papageorgiou},
+  pdf = {Elizalde\survey1 - intensity.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{E05a,
+  author = {Abel Elizalde},
+  title = {Credit Risk Models II: Structural Models},
+  note = {Working paper, CEMFI and UPNA},
+  month = {November},
+  year = {2005},
+  keywords = {Structural approach, default dependency},
+  owner = {Evan Papageorgiou},
+  pdf = {Elizalde\survey2 - structural.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{E05b,
+  author = {Abel Elizalde},
+  title = {Credit Risk Models III: Reconciliation Reduced - Structural Models},
+  note = {Working paper, CEMFI and UPNA},
+  month = {November},
+  year = {2005},
+  keywords = {Structural approach, intensity-based approach, incomplete information},
+  owner = {Evan Papageorgiou},
+  pdf = {Elizalde\survey3 - reconciliation.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{E05c,
+  author = {Abel Elizalde},
+  title = {Credit Risk Models IV: Understanding and pricing CDOs},
+  note = {Working paper, CEMFI and UPNA},
+  month = {December},
+  year = {2005},
+  keywords = {CDOs, copula, structural},
+  owner = {Evan Papageorgiou},
+  pdf = {Elizalde\survey4 - cdos.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{F94,
+  author = {Hans F\"{o}llmer},
+  title = {Stock Price Fluctuation as a Diffusion in a Random Environment},
+  journal = {Philosophical Transactions: Physical Sciences and Engineering},
+  year = {1994},
+  volume = {347},
+  pages = {471--483},
+  number = {1684, Mathematical Models in Finance},
+  owner = {Evan Papageorgiou},
+  pdf = {0.pdf},
+  timestamp = {2006.09.29}
+}
+
+@BOOK{FS02,
+  title = {Stochastic Finance: An Introduction in Discrete Time},
+  publisher = {Walter de Gruyter},
+  year = {2002},
+  author = {Hans F\"{o}llmer and Alexander Schied},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{F01,
+  author = {Damir Filipovi\'{c}},
+  title = {A general characterization of one factor affine term structure models},
+  journal = {Finance and Stochastics},
+  year = {2001},
+  volume = {5},
+  pages = {389--412},
+  owner = {Evan Papageorgiou},
+  pdf = {Filipovic\Filipovic - A General Characterization of One Factor Affine Term Structure Models.pdf},
+  timestamp = {2006.06.11}
+}
+
+@BOOK{F99,
+  title = {Real Analysis: Modern Techniques and Their Applications},
+  publisher = {Wiley},
+  year = {1999},
+  author = {Gerald B. Folland},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{FPS00,
+  title = {Derivatives in Financial Markets with Stochastic Volatility},
+  publisher = {Cambridge University Press},
+  year = {2000},
+  author = {Jean-Pierre Fouque and George Papanicolaou and Ronnie Sircar}
+}
+
+@ARTICLE{FPSS03,
+  author = {Jean-Pierre Fouque and George Papanicolaou and Ronnie Sircar and
+    Knut S{\o}lna},
+  title = {Multiscale Stochastic Volatility Asymptotics},
+  journal = {SIAM Journal of Multiscale Modeling and Simulation},
+  year = {2003},
+  volume = {2},
+  pages = {22--42},
+  number = {1},
+  pdf = {Fouque\Fouque et.al. - Multiscale Stochastic Volatility Asymptotics.pdf}
+}
+
+@ARTICLE{FPSS03a,
+  author = {Jean-Pierre Fouque and George Papanicolaou and Ronnie Sircar and
+    Knut S{\o}lna},
+  title = {Singular Perturbations in Option Pricing},
+  journal = {SIAM Journal of Applied Mathematics},
+  year = {2003},
+  volume = {63},
+  pages = {1648--1665},
+  number = {5},
+  pdf = {Fouque\Fouque et al, Singular Perturbations in Option Pricing.pdf}
+}
+
+@UNPUBLISHED{FSS06,
+  author = {Jean-Pierre Fouque and Ronnie Sircar and Knut S{\o}lna},
+  title = {Stochastic Volatility Effects on Defaultable Bonds},
+  note = {To appear in Applied Mathematical Finance},
+  month = {December},
+  year = {2006},
+  pdf = {Fouque\fss_credit.pdf}
+}
+
+@UNPUBLISHED{FWZ06,
+  author = {Jean-Pierre Fouque and Brian C. Wignall and Xianwen Zhou},
+  title = {Modeling Correlated Defaults: First Passage Model under Stochastic
+    Volatility},
+  note = {Submitted for publication},
+  month = {July},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Fouque\paper-fwz.pdf},
+  timestamp = {2006.07.21}
+}
+
+@UNPUBLISHED{FZ06,
+  author = {Jean-Pierre Fouque and Xianwen Zhou},
+  title = {Perturbed Gaussian Copula},
+  note = {Working paper, University of California Santa Barbara},
+  month = {August},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Fouque\fzCopula.pdf},
+  timestamp = {2006.08.19}
+}
+
+@UNPUBLISHED{FB06,
+  author = {R\"{u}diger Frey and Jochen Backhaus},
+  title = {Credit Derivatives in Models with Interacting Default Intensities:
+    a Markovian Approach},
+  note = {Working paper, University of Leipzig},
+  month = {April},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\frey-backhaus-credit-derivatives.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{FB04,
+  author = {R\'{u}dinger Frey and Jochen Backhaus},
+  title = {Portfolio Credit Risk Models with Interacting Default Intensities:
+    a Markovian Approach},
+  note = {Working paper, University of Leipzig},
+  month = {September},
+  year = {2004},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\interacting-intensities-final.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{FB03,
+  author = {R\'{u}diger Frey and Jochen Backhaus},
+  title = {Interacting Defaults and Counterparty Risk: a Markovian Approach},
+  note = {Working paper, University of Leipzig},
+  month = {July},
+  year = {2003},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\interacting-defaults-2.pdf},
+  timestamp = {2006.11.13}
+}
+
+@UNPUBLISHED{FM04,
+  author = {R\"{u}dinger Frey and Alexander J. McNeil},
+  title = {Dependence Modelling, Model Risk and Model Calibration in Models
+    of Portfolio Credit Risk},
+  note = {Working paper, University of Leipzig},
+  year = {2004},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\frey-mcneil-02a.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{FM03,
+  author = {R\'{u}diger Frey and Alexander J. McNeil},
+  title = {Dependent Defaults in Models of Portfolio Credit Risk},
+  journal = {Journal of Risk},
+  year = {2003},
+  volume = {6},
+  pages = {59--92},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\defaults-jor.pdf},
+  timestamp = {2006.08.08}
+}
+
+@UNPUBLISHED{FM01,
+  author = {R\"udiger Frey and Alexander J. McNeil},
+  title = {Modelling Dependent Defaults},
+  note = {Working paper, University of Zurich},
+  month = {August},
+  year = {2001},
+  owner = {Evan Papageorgiou},
+  pdf = {Frey\credit-paper.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{FS06,
+  author = {R\"{u}diger Frey and Thorstn Schmidt},
+  title = {Pricing Corporate Securities under Noisy Asset Information},
+  note = {Wokring paper, University of Leipzig},
+  month = {July},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {frey\NoisyAssetFinal.pdf},
+  timestamp = {2006.09.22}
+}
+
+@ARTICLE{FR05,
+  author = {Andrew Friend and Ebbe Rogge},
+  title = {Correlation at First Sight},
+  journal = {Economic Notes},
+  year = {2005},
+  volume = {34},
+  pages = {155--183},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {FR2005.pdf},
+  timestamp = {2006.09.28}
+}
+
+@ARTICLE{GMS04,
+  author = {Tania Garcia and Arthur Maghakian and Sanjay Sharma},
+  title = {Implications of Stochastic Recovery Rates in Evaluating CDO Tranches},
+  journal = {Journal of Fixed Income},
+  year = {2004},
+  volume = {14},
+  pages = {64--71},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {JFI DE 04 Garcia_Maghakian.pdf},
+  timestamp = {2006.11.16}
+}
+
+@UNPUBLISHED{GS05,
+  author = {Raquel M. Gaspar and Thorsten Schmidt},
+  title = {Quadratic Models for Portfolio Credit Risk with Shot-Noise Effects},
+  note = {Working paper, Stocholm School of Economics},
+  month = {November},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {hastef0616.pdf},
+  timestamp = {2006.11.16}
+}
+
+@TECHREPORT{G04,
+  author = {Kay Giesecke},
+  title = {Credit Risk: Models and Management},
+  institution = {Cornell University},
+  year = {2004},
+  address = {London},
+  editor = {David Shimko},
+  publisher = {Riskbooks},
+  volume = {2}
+}
+
+@UNPUBLISHED{G05,
+  author = {Kay Giesecke},
+  title = {Default and Information},
+  note = {Forthcoming in Journal of Economic Dynamics and Control},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Giesecke\Giesecke - Default and Information.pdf},
+  timestamp = {2006.06.11}
+}
+
+@TECHREPORT{G04a,
+  author = {Kay Giesecke},
+  title = {Credit Risk Modeling and Valuation: An Introduction},
+  institution = {Cornell University},
+  year = {2004},
+  month = {October},
+  owner = {Evan Papageorgiou},
+  pdf = {Giesecke\Giesecke - CREDIT RISK MODELING AND VALUATION.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{G03a,
+  author = {Kay Giesecke},
+  title = {A Simple Exponential Model for Dependent Defaults},
+  journal = {Journal of Fixed Income},
+  year = {2003},
+  volume = {13},
+  pages = {74--83},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {Giesecke\paper6.pdf},
+  timestamp = {2006.08.10}
+}
+
+@UNPUBLISHED{GG06,
+  author = {Kay Giesecke and Lisa R. Goldberg},
+  title = {A Top Down Approach to Multi-Name Credit},
+  note = {Work in progress},
+  month = {July},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Giesecke\topdown.pdf},
+  timestamp = {2006.08.02}
+}
+
+@UNPUBLISHED{GG05,
+  author = {Kay Giesecke and Lisa R. Goldberg},
+  title = {The Market Price of Credit Risk},
+  note = {Working paper, Stanford University},
+  month = {March},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Giesecke\Giesecke, Goldberg - The Market Price of Credit Risk.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{GG04,
+  author = {Kay Giesecke and Lisa R. Goldberg},
+  title = {Sequential defaults and incomplete information},
+  journal = {Journal of Risk},
+  year = {2004},
+  volume = {7},
+  pages = {1--26},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {journalofrisk_fall_2004.pdf},
+  timestamp = {2006.07.26}
+}
+
+@BOOK{GT01,
+  title = {Elliptic Partial Differential Equations of Second Order},
+  publisher = {Springer},
+  year = {2001},
+  author = {David Gilbarg and Neil S. Trudinger},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{G03,
+  title = {Monte Carlo Methods in Financial Engineering},
+  publisher = {Springer},
+  year = {2003},
+  author = {Paul Glasserman},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{G00,
+  author = {Robert S. Goldstein},
+  title = {The Term Structure of Interest Rates as a Random Field},
+  journal = {Review of Financial Studies},
+  year = {2000},
+  volume = {13},
+  pages = {365--384},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {Goldstein\Goldstein - Term Structure as a Random Field2.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{G97,
+  author = {Robert S. Goldstein},
+  title = {Identifying the Class of Term Structure Models Possessing Closed-Form
+    Solutions for Bond and Bond-Option Prices: An Expectation Approach},
+  note = {Working paper, Ohio State University},
+  month = {June},
+  year = {1997},
+  owner = {Evan Papageorgiou},
+  pdf = {Goldstein\Goldstein - Term Structure Identification.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{GL04,
+  author = {Jon Gregory and Jean-Paul Laurent},
+  title = {In the Core of Correlation},
+  note = {Working paper, BNP-Paribas},
+  month = {April},
+  year = {2004},
+  keywords = {correlation, CDO},
+  owner = {Evan Papageorgiou},
+  pdf = {Correlation_Core.pdf},
+  timestamp = {2006.05.31}
+}
+
+@ARTICLE{GL03,
+  author = {Jon Gregory and Jean-Paul Laurent},
+  title = {I will survive},
+  journal = {Risk},
+  year = {2003},
+  volume = {June},
+  pages = {103--107},
+  month = {June},
+  keywords = {CDOs, correlation},
+  owner = {Evan Papageorgiou},
+  pdf = {Laurent\Gregory Laurent (2003)_I will survive.pdf},
+  timestamp = {2006.05.31}
+}
+
+@ARTICLE{GR04,
+  author = {Peter Grundke and Karl O. Riedel},
+  title = {Pricing the Risks of Default: A Note on Madan and Unal},
+  journal = {Review of Derivatives Research},
+  year = {2004},
+  volume = {7},
+  pages = {169--173},
+  owner = {Evan Papageorgiou},
+  pdf = {Madan\Note on Madan and Unal.pdf},
+  timestamp = {2006.08.09}
+}
+
+@UNPUBLISHED{GH05,
+  author = {Dominique Guegan and Julien Houdain},
+  title = {Collateralized Debt Obligations pricing and factor models: a new
+    methodology using Normal Inverse Gaussian distributions.},
+  note = {Working paper, Ecole Normale Sup\'{e}rieure},
+  month = {June},
+  year = {2005},
+  keywords = {CDO, factor models},
+  owner = {Evan Papageorgiou},
+  pdf = {Guegan\g.pdf},
+  timestamp = {2006.06.11}
+}
+
+@UNPUBLISHED{GJZ05,
+  author = {Xin Guo and Robert A. Jarrow and Yan Zeng},
+  title = {Modeling the Recovery Rate in a Reduced Form Model},
+  note = {Working paper, Cornell University},
+  month = {September},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {paper_r_19.pdf},
+  timestamp = {2006.10.11}
+}
+
+@ARTICLE{G05a,
+  author = {Greg M. Gupton},
+  title = {Advancing Loss Given Default Prediction Models: How the Quiet Have
+    Quickened},
+  journal = {Economic Notes},
+  year = {2005},
+  volume = {34},
+  pages = {185--230},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {Gupton2005.pdf},
+  timestamp = {2006.09.28}
+}
+
+@BOOK{H74,
+  title = {Measure Theory},
+  publisher = {Springer},
+  year = {1974},
+  author = {Paul Richard Halmos},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@ARTICLE{HK79,
+  author = {J. Michael Harrison and David M. Kreps},
+  title = {Martingales and Arbitrage in Multiperiod Securities Markets},
+  journal = {Journal of Economic Theory},
+  year = {1979},
+  volume = {20},
+  pages = {381--408},
+  owner = {Evan Papageorgiou},
+  pdf = {Harrison, Kreps - Martingales and Arbitrage in Multi-period Security Markets.pdf},
+  timestamp = {2006.08.09}
+}
+
+@UNPUBLISHED{HKM06,
+  author = {Masato Hisakado and Kenji Kitsukawa and Shintaro Mori},
+  title = {Correlated Binomial Models and Correlation Structures},
+  note = {Working paper, Standard and Poor's},
+  month = {May},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {0605189.pdf},
+  timestamp = {2006.11.15}
+}
+
+@UNPUBLISHED{HH03,
+  author = {Jing-zhi Huang and Ming Huang},
+  title = {How Much of the Corporate-Treasury Yield Spread is Due to Credit
+    Risk?},
+  note = {Working paper, Penn State University},
+  month = {May},
+  year = {2003},
+  keywords = {Basis, credit risk, structural approach},
+  owner = {Evan Papageorgiou},
+  pdf = {Huang\Huang^2 - Corporate Yld Sprd D 2 Credit Risk.pdf},
+  timestamp = {2006.06.11}
+}
+
+@ARTICLE{HPW04,
+  author = {John Hull and Mirela Predescu and Alan White},
+  title = {The Relationship Between Credit Default Swap Spreads, Bond Yields,
+    and Credit Rating Announcements},
+  journal = {Journal of Banking and Finance},
+  year = {2004},
+  volume = {28},
+  pages = {2789--2811},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\Hull, Predescu, White.pdf},
+  timestamp = {2006.06.12}
+}
+
+@UNPUBLISHED{HW06,
+  author = {John Hull and Alan White},
+  title = {Valuing Credit Derivatives Using an Implied Copula Approach},
+  note = {Working paper, Rotman School of Management},
+  month = {October},
+  year = {2006},
+  keywords = {CDOs, copulas},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\ImpliedCopulaPaper.pdf},
+  timestamp = {2006.05.31}
+}
+
+@ARTICLE{HW04,
+  author = {John Hull and Alan White},
+  title = {Valuation of a {CDO} and an nth to Default {CDS} without {M}onte
+    {C}arlo simulation},
+  journal = {Journal of Derivatives},
+  year = {2004},
+  volume = {12},
+  pages = {8--23},
+  number = {2},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\HullWhiteCDOPaper.pdf},
+  timestamp = {2006.08.14}
+}
+
+@ARTICLE{HW03,
+  author = {John Hull and Alan White},
+  title = {The Valuation of Credit Default Swap Options},
+  journal = {Journal of Derivatives},
+  year = {2003},
+  volume = {10},
+  pages = {40--50},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\HullWhiteCDSoptionspaper.pdf},
+  timestamp = {2006.08.14}
+}
+
+@ARTICLE{HW00,
+  author = {John Hull and Alan White},
+  title = {Valuing Credit Default Swaps I: No Counterparty Default Risk},
+  journal = {Journal of Derivatives},
+  year = {2000},
+  volume = {8},
+  pages = {29--40},
+  number = {1},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\CredDefSw1.pdf},
+  timestamp = {2006.06.12}
+}
+
+@ARTICLE{HW00a,
+  author = {John Hull and Alan White},
+  title = {Valuing Credit Default Swaps II: Modeling Default Correlations},
+  journal = {Journal of Derivatives},
+  year = {2000},
+  volume = {8},
+  pages = {12--22},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {Hull\CredDefSw1.pdf},
+  timestamp = {2006.06.12}
+}
+
+@BOOK{H02,
+  title = {Options, Futures and Other Derivatives},
+  publisher = {Prentice Hall},
+  year = {2002},
+  author = {John C. Hull},
+  edition = {5th},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@UNPUBLISHED{HK05,
+  author = {Tom R. Hurd and Alexey Kuznetsov},
+  title = {Fast CDO computations in the affine {M}arkov chain model},
+  note = {Working paper, McMaster University},
+  month = {March},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Hurd\Hurd - Fast CDO computations in the affine Markov chain model.pdf},
+  timestamp = {2006.08.07}
+}
+
+@UNPUBLISHED{HK05a,
+  author = {Tom R. Hurd and Alexey Kuznetsov},
+  title = {Affine {M}arkov chain model of multifirm credit migration},
+  note = {Working paper, McMaster University},
+  month = {March},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Hurd\Hurd - Affine Markov chain models of multifirm credit.pdf},
+  timestamp = {2006.08.07}
+}
+
+@BOOK{JP99,
+  title = {Probability Essentials},
+  publisher = {Springer},
+  year = {1999},
+  author = {Jean Jacod and Philip Protter},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{J04,
+  author = {Farshid Jamshidian},
+  title = {Valuation of credit default swaps and swaptions},
+  journal = {Finance and Stochastics},
+  year = {2004},
+  volume = {8},
+  pages = {343--371},
+  number = {3},
+  doi = {10.1007/s00780-004-0122-y},
+  owner = {Evan Papageorgiou},
+  pdf = {Jamshidian\Jamshidian - Valuation of Credit Default Swaps and Swaptions.pdf},
+  timestamp = {2006.06.19}
+}
+
+@ARTICLE{J97,
+  author = {Farshid Jamshidian},
+  title = {LIBOR and swap market models and measures},
+  journal = {Finance and Stochastics},
+  year = {1997},
+  volume = {1},
+  pages = {293--330},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {Jamshidian\Jamshidian - LIBOR and swap market models and measures.pdf},
+  timestamp = {2006.06.19}
+}
+
+@ARTICLE{J95,
+  author = {Farshid Jamshidian},
+  title = {A simple class of square-root interest-rate models},
+  journal = {Applied Mathematical Finance},
+  year = {1995},
+  volume = {2},
+  pages = {61--72},
+  number = {1},
+  keywords = {square-root process, chi-squared distribution, Riccati equation, volatility
+    curve, bond option},
+  owner = {Evan Papageorgiou},
+  pdf = {Jamshidian\Jamshidian - A Simple Class of Square-Root Interest-Rate Models.pdf},
+  timestamp = {2006.06.19}
+}
+
+@ARTICLE{J89,
+  author = {Farshid Jamshidian},
+  title = {An Exact Bond Option Formula},
+  journal = {Journal of Finance},
+  year = {1989},
+  volume = {44},
+  pages = {205--209},
+  number = {1},
+  keywords = {bond option, forward measure, change of measure},
+  owner = {Evan Papageorgiou},
+  pdf = {Jamshidian\Jamshidian - An Exact Bond Option Formula.pdf},
+  timestamp = {2006.06.19}
+}
+
+@ARTICLE{JT95,
+  author = {Robert A. Jarrow and Stuart M. Turnbull},
+  title = {Pricing Derivatives on Financial Securities Subject to Credit Risk},
+  journal = {Journal of Finance},
+  year = {1995},
+  volume = {50},
+  pages = {53--85},
+  number = {1},
+  pdf = {Jarrow\Jarrow Turnbull (1995).pdf}
+}
+
+@BOOK{KS98,
+  title = {Methods of Mathematical Finance},
+  publisher = {Springer},
+  year = {1998},
+  author = {Ioannis Karatzas and Steven E. Shreve},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@UNPUBLISHED{K05,
+  author = {Lofti Karoui},
+  title = {Modeling the Term Structure of Defaultable Bonds under Recovery Risk},
+  note = {Working paper, McGill University},
+  month = {November},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {reco.pdf},
+  timestamp = {2006.10.02}
+}
+
+@BOOK{K98,
+  title = {Introduction to Stochastic Calculus with Applications},
+  publisher = {Imperial College Press},
+  year = {1998},
+  author = {Fima C. Klebaner},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{LL96,
+  title = {Introduction to Stochastic Calculus Applied to Finance},
+  publisher = {Chapman \& Hall/CRC},
+  year = {1996},
+  author = {Damien Lamberton and Bernard Lapeyre},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{L04,
+  title = {Credit Risk Modeling: Theory and Applications},
+  publisher = {Princeton University Press},
+  year = {2004},
+  author = {David Lando}
+}
+
+@ARTICLE{L98,
+  author = {David Lando},
+  title = {On {C}ox Processes and Credit Risky Securities},
+  journal = {Review of Derivatives Research},
+  year = {1998},
+  volume = {2},
+  pages = {99--120},
+  number = {2/3},
+  doi = {10.1007/BF01531332},
+  pdf = {Lando\t0476nv57w1xw712.pdf}
+}
+
+@UNPUBLISHED{L06,
+  author = {Jean-Paul Laurent},
+  title = {A Note on the Risk Management of {CDO}s},
+  note = {Working paper, University of Lyon},
+  month = {September},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {note_risk_management_cdos.pdf},
+  timestamp = {2006.09.22}
+}
+
+@UNPUBLISHED{LG03,
+  author = {Jean-Paul Laurent and Jon Gregory},
+  title = {Basket Default Swaps, CDOs and Factor Copulas},
+  note = {Working paper, BNP-Paribas},
+  month = {September},
+  year = {2003},
+  keywords = {CDOs, factor model, basket default swaps, copulas},
+  owner = {Evan Papageorgiou},
+  pdf = {Laurent\Basket_Default_Swaps_CDO_n_Fctr_Cpl.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{L95,
+  title = {Introduction to Stochastic Processes},
+  publisher = {Chapman \& Hall/CRC},
+  year = {1995},
+  author = {Gregory F. Lawler},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{L00,
+  author = {David X. Li},
+  title = {On Default Correlation: A Copula Function Approach},
+  journal = {Journal of Fixed Income},
+  year = {2000},
+  volume = {9},
+  pages = {43--54},
+  number = {4},
+  keywords = {copulas, default correlation},
+  owner = {Evan Papageorgiou},
+  pdf = {D. Li On Default correlation A copula function approach.pdf},
+  timestamp = {2006.05.31}
+}
+
+@UNPUBLISHED{LL05,
+  author = {David X. Li and Michael Liang},
+  title = {CDO^2 Pricing Using Gaussian Mixture Model with Transformation of
+    Loss Distribution},
+  note = {Working paper, Barclays Capital},
+  month = {September},
+  year = {2005},
+  keywords = {cdo squared, implied loss distribution, loss distribution transformation},
+  owner = {Evan Papageorgiou},
+  pdf = {GMCDOsquared.pdf},
+  timestamp = {2006.05.31}
+}
+
+@ARTICLE{L98a,
+  author = {Haitao Li},
+  title = {Pricing of Swaps with Default Risk},
+  journal = {Review of Derivatives Research},
+  year = {1998},
+  volume = {2},
+  pages = {231--250},
+  number = {2/3},
+  doi = {10.1007/BF01531336},
+  owner = {Evan Papageorgiou},
+  pdf = {j736w72278837401.pdf},
+  timestamp = {2006.06.23}
+}
+
+@UNPUBLISHED{LLM06,
+  author = {Jun Liu and Francis A. Longstaff and Ravit E. Mandell},
+  title = {The Market Price of Credit Risk: An Empirical Analysis of Interest
+    Rate Swap Spreads},
+  note = {To appear in the Journal of Business},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {w8990.pdf},
+  timestamp = {2006.08.01}
+}
+
+@BOOK{L05,
+  title = {Modeling Derivatives in C++},
+  publisher = {Wiley},
+  year = {2005},
+  author = {Justin London},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@UNPUBLISHED{LMN04,
+  author = {Francis A. Longstaff and Sanjay Mithal and Eric Neis},
+  title = {Corporate Yield Spreads: Default Risk or Liquidity? {N}ew Evidence
+    from the Credit-Default Swap Market},
+  note = {NBER Working Paper Series},
+  month = {April},
+  year = {2004}
+}
+
+@UNPUBLISHED{LR06,
+  author = {Francis A. Longstaff and Arvind Rajan},
+  title = {An empirical analysis of the pricing of Collateralized Debt Obligations},
+  note = {Working paper, UCLA},
+  month = {April},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {cdo.pdf},
+  timestamp = {2006.07.25}
+}
+
+@BOOK{LGF06,
+  title = {Collateralized Debt Obligations},
+  publisher = {Wiley},
+  year = {2006},
+  author = {Douglas J. Lucas and Laurie S. Goodman and Frank J. Fabozzi},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{L97,
+  title = {Investment Science},
+  publisher = {Oxford University Press},
+  year = {1997},
+  author = {David G. Luenberger},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{MU98,
+  author = {Dilip Madan and Haluk Unal},
+  title = {Pricing the Risks of Default},
+  journal = {Review of Derivatives Research},
+  year = {1998},
+  volume = {2},
+  pages = {121--160},
+  number = {2/3},
+  doi = {10.1007/BF01531333},
+  pdf = {Madan\r7r14w4467602851.pdf}
+}
+
+@ARTICLE{MSK04,
+  author = {Glen McDermott and Jure Skarabot and Alexei Kroujiline},
+  title = {Optimizing Selection of Credit Portfolios},
+  journal = {Journal of Portfolio Management},
+  year = {2004},
+  volume = {30},
+  pages = {112--123},
+  number = {3},
+  owner = {Evan Papageorgiou},
+  pdf = {JPM SP 04 McDermott_Skarabo.pdf},
+  timestamp = {2006.11.09}
+}
+
+@ARTICLE{MG05,
+  author = {Lei Meng and Owain ap Gwilym},
+  title = {Credit Default Swaps: Theory and Empirical Evidence},
+  journal = {Journal of Fixed Income},
+  year = {2005},
+  volume = {14},
+  pages = {17--28},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {JFI MA 05 Meng_Gwilym.pdf},
+  timestamp = {2006.11.16}
+}
+
+@ARTICLE{M74,
+  author = {Robert Merton},
+  title = {On the Pricing of Corporate Debt: The Risk Structure of Interest
+    Rates},
+  journal = {Journal of Finance},
+  year = {1974},
+  volume = {29},
+  pages = {449--470}
+}
+
+@ARTICLE{M76,
+  author = {Robert C. Merton},
+  title = {Option Pricing When Underlying Stock Returns Are Discontinuous},
+  journal = {Journal of Financial Economics},
+  year = {1976},
+  volume = {3},
+  pages = {125--144},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.11.23}
+}
+
+@PHDTHESIS{M05,
+  author = {Daniel Wei-Chung Miao},
+  title = {Markov Modulated Poisson Processes in Credit Risk Modeling},
+  school = {University of Oxford},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {MMPP_creditrisk.pdf},
+  timestamp = {2006.09.29}
+}
+
+@ARTICLE{ML03,
+  author = {Cleve Moler and Charles van Loan},
+  title = {Nineteen Dubious Ways to Compute the Exponential of a Matrix, Twenty-Five
+    Years Later},
+  journal = {SIAM Review},
+  year = {2003},
+  volume = {20},
+  pages = {801--836},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {19ways+.pdf},
+  timestamp = {2006.10.30}
+}
+
+@ARTICLE{M06,
+  author = {Allan Mortensen},
+  title = {Semi-Analytical Valuation of Basket Credit Derivatives in Intensity-Based
+    Models},
+  journal = {Journal of Derivatives},
+  year = {2006},
+  volume = {13},
+  pages = {8--26},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {Mortensen\AM_BasketIntensities_13jan2006.pdf},
+  timestamp = {2006.07.21}
+}
+
+@BOOK{MM94,
+  title = {Numerical Solution of Partial Differential Equations},
+  publisher = {Cambridge University Press},
+  year = {1994},
+  author = {K. W. Morton and D. F. Mayers},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.10.11}
+}
+
+@BOOK{MR97,
+  title = {Martingale Methods in Financial Modelling},
+  publisher = {Springer},
+  year = {1997},
+  author = {Marek Musiela and Marek Rutkowski},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{NS96,
+  title = {Linear and Nonlinear Programming},
+  publisher = {McGraw-Hill},
+  year = {1996},
+  author = {Stephen G. Nash and Ariela Sofer},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@UNPUBLISHED{PS06,
+  author = {Evan Papageorgiou and Ronnie Sircar},
+  title = {Multiscale Intensity Models for Single Name Credit Derivatives},
+  note = {Working paper, Princeton University},
+  month = {Jun},
+  year = {2006},
+  keywords = {Time scales, intensity-based models, CDS, bond option, asymptotic
+    approximation},
+  owner = {Evan Papageorgiou},
+  pdf = {C:\Documents and Settings\evanp\My Documents\Research\Paper\Multiscale Intensity Models for Single Name Credit Derivatives.pdf},
+  timestamp = {2006.06.26}
+}
+
+@BOOK{PTVF92,
+  title = {Numerical Recipes in C},
+  publisher = {Cambridge University Press},
+  year = {1992},
+  author = {William H. Press and Saul A. Teukolsky and William T. Vetterling
+    and Brian P. Flannery},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{RY99,
+  title = {Continuous Martingales and Brownian Motion},
+  publisher = {Springer},
+  year = {1999},
+  author = {Daniel Revuz and Marc Yor},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@ARTICLE{R95,
+  author = {L. C. G. Rogers},
+  title = {Which Model for Term-Structure of Interest Rates Should One Use?},
+  journal = {Mathematical Finance},
+  year = {1995},
+  volume = {IMA Volume 65},
+  pages = {93--116},
+  pdf = {Rogers\Rogers - Which Model for Term-Structure of Interest Rates Should One Use.pdf}
+}
+
+@BOOK{RW00,
+  title = {Diffusions, Markov Processes and Martingales: Foundations},
+  publisher = {Cambridge University Press},
+  year = {2000},
+  author = {L. Chris G. Rogers and David Williams},
+  volume = {1},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{RW00a,
+  title = {Diffusions, Markov Processes and Martingales: It\^{o} Calculus},
+  publisher = {Cambridge University Press},
+  year = {2000},
+  author = {L. Chris G. Rogers and David Williams},
+  volume = {2},
+  edition = {2nd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{R02,
+  title = {Introduction to Probability Models},
+  publisher = {Academic Press},
+  year = {2002},
+  author = {Sheldon M. Ross},
+  edition = {8th},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{R88,
+  title = {Real Analysis},
+  publisher = {Prentice-Hall},
+  year = {1988},
+  author = {H. L. Royden},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{R76,
+  title = {Principles of Mathematical Analysis},
+  publisher = {McGraw-Hill},
+  year = {1976},
+  author = {Walter Rudin},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.08.14}
+}
+
+@BOOK{S03,
+  title = {Credit Derivatives Pricing Models: Models, Pricing and Implementation},
+  publisher = {Wiley},
+  year = {2003},
+  author = {Philipp J. Sch\"{o}nbucher}
+}
+
+@ARTICLE{S98,
+  author = {Philipp J. Sch\"{o}nbucher},
+  title = {The Term Structure of Defaultable Bond Prices},
+  journal = {Review of Derivatives Research},
+  year = {1998},
+  volume = {2},
+  pages = {161--192},
+  number = {2/3},
+  doi = {10.1007/BF01531334},
+  pdf = {Schonbucher\v3ru504757844183.pdf}
+}
+
+@UNPUBLISHED{S98a,
+  author = {Philipp J. Sch\"{o}nbucher},
+  title = {Pricing Credit Risk Derivatives},
+  note = {Working paper, Bonn University},
+  month = {June},
+  year = {1998}
+}
+
+@UNPUBLISHED{S06a,
+  author = {Thorsten Schmidt},
+  title = {Coping with Copulas},
+  note = {Forthcoming in Risk Books \emph{Copulas: From Theory to Applications
+    in Finance}},
+  month = {June},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {TSchmidt_Copulas.pdf},
+  timestamp = {2006.09.22}
+}
+
+@ARTICLE{S99a,
+  author = {Mark Schroder},
+  title = {Changes of Numeraire for Pricing Futures, Forwards, and Options},
+  journal = {Review of Financial Studies},
+  year = {1999},
+  volume = {12},
+  pages = {1143--1163},
+  number = {5},
+  owner = {Evan Papageorgiou},
+  pdf = {Schroder, et.al. - Changes of Numeraire for Pricing Futures, Forwards, and Options.pdf},
+  timestamp = {2006.08.09}
+}
+
+@ARTICLE{S98b,
+  author = {Schwartz, Tal},
+  title = {Estimating the term structures of corporate debt},
+  journal = {Review of Derivatives Research},
+  year = {1998},
+  volume = {2},
+  pages = {193--230},
+  number = {2/3},
+  month = dec,
+  doi = {10.1007/BF01531335},
+  owner = {Evan Papageorgiou},
+  pdf = {x54867711072285g.pdf},
+  timestamp = {2006.06.23},
+  url = {http://www.springerlink.com/openurl.asp?genre=article&id=doi:10.1007/BF01531335}
+}
+
+@BOOK{S06,
+  title = {Solving PDEs in C++},
+  publisher = {SIAM},
+  year = {2006},
+  author = {Yair Shapira},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.07.18}
+}
+
+@BOOK{S99,
+  title = {Essentials of Stochastic Finance: Facts, Models, Theory},
+  publisher = {World Scientific},
+  year = {1999},
+  author = {Albert N. Shiryaev},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{S04,
+  title = {Stochastic Calculus for Finance},
+  publisher = {Springer},
+  year = {2004},
+  author = {Steven E. Shreve},
+  volume = {2},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@UNPUBLISHED{SPA05,
+  author = {Jakob Sidenius and Vladimir Piterbarg and Leif Andersen},
+  title = {A New Framework for Dynamic Credit Portfolio Loss Modelling},
+  note = {Working paper, Bank of America},
+  month = {November},
+  year = {2005},
+  owner = {Evan Papageorgiou},
+  pdf = {Sidenius\spa_vp_1.pdf},
+  timestamp = {2006.06.09}
+}
+
+@UNPUBLISHED{SZ06,
+  author = {Ronnie Sircar and Thaleia Zariphopoulou},
+  title = {Utility Valutation of Credit Derivatives and Application to {CDO}s},
+  note = {Working paper, Princeton University},
+  month = {July 16},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {indiff_credit5.pdf},
+  timestamp = {2006.08.24}
+}
+
+@BOOK{S01,
+  title = {Stochastic Calculus and Financial Applications},
+  publisher = {Springer},
+  year = {2001},
+  author = {J. Michael Steele},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{S88,
+  title = {Linear Algebra and Its Applications},
+  publisher = {Brooks/Cole},
+  year = {1988},
+  author = {Gilbert Strang},
+  edition = {3rd},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@BOOK{S92,
+  title = {Partial Differential Equations: An Introduction},
+  publisher = {Wiley},
+  year = {1992},
+  author = {Walter A. Strauss},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@PHDTHESIS{T06,
+  author = {Allan Jamey Thompson},
+  title = {A {L}\'{e}vy Model for Default Dependence},
+  school = {Princeton University},
+  year = {2006},
+  owner = {Evan Papageorgiou},
+  pdf = {Thompson Thesis.pdf},
+  timestamp = {2006.08.17}
+}
+
+@UNPUBLISHED{TLR04,
+  author = {Stefan Tr\"{u}ck and Matthias Laub and Svetlozar T. Rachev},
+  title = {The term structure of credit spreads and credit default swaps: an
+    empirical investigation},
+  note = {Working paper, University of Karlsruhe},
+  month = {October},
+  year = {2004},
+  owner = {Evan Papageorgiou},
+  pdf = {Truck, et.al. - The Term Structure of Credit Spreads and Credit Default Swaps.pdf},
+  timestamp = {2006.08.09}
+}
+
+@BOOK{V01,
+  title = {Linear Programming: Foundations and Extensions},
+  publisher = {Kluwer Academic Publishers},
+  year = {2001},
+  author = {Robert J. Vanderbei},
+  owner = {Evan Papageorgiou},
+  timestamp = {2006.06.07}
+}
+
+@ARTICLE{V77,
+  author = {Oldrich Vasicek},
+  title = {An equilibrium characterization of the term structure},
+  journal = {Journal of Financial Economics},
+  year = {1977},
+  volume = {5},
+  pages = {177--188}
+}
+
+@UNPUBLISHED{W05,
+  author = {S{\o}ren Willemann},
+  title = {Fitting the CDO Correlation Skew: A Tractable Structural Jump-Diffusion
+    Model},
+  note = {Working paper, Aarhus School of Business},
+  month = {November},
+  year = {2005},
+  keywords = {structural models, CDO, jump-diffusion, correlation skew},
+  owner = {Evan Papageorgiou},
+  pdf = {JDCDO.pdf},
+  timestamp = {2006.05.31}
+}
+
+@BOOK{WHD95,
+  title = {The Mathematics of Financial Derivatives: A Student Introduction},
+  publisher = {Cambridge University Press},
+  year = {1995},
+  author = {Paul Wilmott and Sam Howison and Jeff Dewynne}
+}
+
+@ARTICLE{Y05,
+  author = {Fan Yu},
+  title = {Default Correlation in Reduced-Form Models},
+  journal = {Journal of Investment Management},
+  year = {2005},
+  volume = {3},
+  pages = {33--42},
+  number = {4},
+  owner = {Evan Papageorgiou},
+  pdf = {defcor.pdf},
+  timestamp = {2006.07.26}
+}
+
+@UNPUBLISHED{Y04,
+  author = {Fan Yu},
+  title = {Correlated Defaults in Intensity-Based Models},
+  note = {To appear in Mathematical Finance},
+  month = {April},
+  year = {2004},
+  owner = {Evan Papageorgiou},
+  pdf = {corrdef.pdf},
+  timestamp = {2006.07.26}
+}
+
+@UNPUBLISHED{Y03,
+  author = {Fan Yu},
+  title = {Dependent Default in Intensity-Based Models},
+  note = {Working paper},
+  month = {September},
+  year = {2003},
+  owner = {Evan Papageorgiou},
+  pdf = {Dependent_Default_Intensity-Bsd_Mdls.pdf},
+  timestamp = {2006.07.26}
+}

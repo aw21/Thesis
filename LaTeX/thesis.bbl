@@ -1,0 +1,52 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Almgren and Chriss}{1999}]{A1}
+Almgren, R. and Chriss, N. (1999).
+\newblock Optimal execution of portfolio transactions.
+\newblock {\em Journal of Risk}, 3:5--39.
+
+\bibitem[\protect\astroncite{Coinbase}{2018}]{L2}
+Coinbase (2018).
+\newblock Coinbase markets trading rules.
+\newblock \url{https://www.coinbase.com/legal/trading_rules?locale=en-US}.
+\newblock Accessed: \today.
+
+\bibitem[\protect\astroncite{CoinMarketCap}{2018}]{L1}
+CoinMarketCap (2018).
+\newblock Coinbase pro market cap.
+\newblock \url{https://coinmarketcap.com/exchanges/coinbase-pro/}.
+\newblock Accessed: \today.
+
+\bibitem[\protect\astroncite{Foundation}{2018}]{L3}
+Foundation, P.~S. (2018).
+\newblock Copra.
+\newblock \url{https://pypi.org/project/copra/}.
+\newblock Accessed: \today.
+
+\bibitem[\protect\astroncite{Huang et~al.}{2013}]{A6}
+Huang, W., Lehalle, C.-A., and Rosenbaum, M. (2013).
+\newblock Simulating and analyzing order book data: The queue-reactive model.
+\newblock {\em Journal of the American Statistical Association}, page 110.
+
+\bibitem[\protect\astroncite{Laruelle et~al.}{2013}]{A2}
+Laruelle, S., Lehalle, C.-A., and Pagès, G. (2013).
+\newblock Optimal posting price of limit orders: Learning by trading.
+\newblock {\em Mathematics and Financial Economics}, 7:359--403.
+
+\bibitem[\protect\astroncite{Lim and Coggins}{2005}]{A5}
+Lim, M. and Coggins, R. (2005).
+\newblock Optimal trade execution: An evolutionary approach.
+\newblock {\em The 2005 IEEE Congress on Evolutionary Computation}, 2.
+
+\bibitem[\protect\astroncite{Nevmyvaka et~al.}{2006}]{A3}
+Nevmyvaka, Y., Feng, Y., and Kearns, M. (2006).
+\newblock Reinforcement learning for optimized trade execution.
+\newblock In {\em Proceedings of the 23rd International Conference on Machine
+  Learning}, ICML '06, pages 673--680, New York, NY, USA. ACM.
+
+\bibitem[\protect\astroncite{Spooner et~al.}{2018}]{A4}
+Spooner, T., Fearnley, J., Savani, R., and Koukorinis, A. (2018).
+\newblock Market making via reinforcement learning.
+\newblock {\em CoRR}, abs/1804.04216.
+
+\end{thebibliography}

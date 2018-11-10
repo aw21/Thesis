@@ -1,0 +1,87 @@
+\RequirePackage[table]{xcolor}
+\documentclass[12pt,lot,lol,lof]{puthesis_undergraduate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[round, longnamesfirst]{natbib} % for nice bibliography
+\usepackage{url}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+}
+
+%Do not un-comment the next two lines
+%Included for Gather Purpose only in WinEdt (ignore for other editors):
+%input "./Bibliography/refs.bib"
+
+\title{Using Reinforcement Learning With Simulated Limit Order Book Data To Optimize Trade Execution: Fall Term Report}
+\submitted{June 2019}  %graduation date
+\author{Andrew Wang}
+\advisor{Professor Mykhaylo Shkolnikov} %
+%\dedication{To me}
+
+
+\abstract{
+\input{Chapters/abstract}
+}
+
+%\acknowledgements{
+%\input{Chapters/acknowledgments}
+%}
+
+\begin{document}
+
+\chapter{Introduction}\label{ch:intro}  %insert chapter title
+\input{Chapters/introduction} % and path to the .tex file (no need to include .tex)
+
+\chapter{Preliminary Literature Review}\label{ch:litreview}
+\input{Chapters/literature_review}
+
+\chapter{Data Source}\label{ch:data_source}
+\input{Chapters/data}
+
+\chapter{Experimental Procedure}\label{ch:experiment}
+\input{Chapters/experiment}
+
+\chapter{Analysis}
+\input{Chapters/analysis}
+
+\chapter{Timeline}
+\input{Chapters/timeline}
+
+\chapter{Conclusion}
+\input{Chapters/conclusion}
+
+% \chapter{Development of the Department of Operations Research and Financial Engineering}  continue adding chapter titles
+% \input{Chapters/development}
+
+% \chapter{Analysis of Problem}
+% \input{Chapters/analysis}
+
+% \appendix
+% \chapter{Code}
+% \input{Chapters/code}
+
+
+\bibliographystyle{apa}
+\bibliography{Bibliography/refs} \label{bib}
+
+
+\end{document}

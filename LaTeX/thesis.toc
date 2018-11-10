@@ -1,0 +1,28 @@
+\contentsline {section}{Abstract}{iii}
+\contentsline {section}{List of Tables}{vi}
+\contentsline {section}{List of Figures}{vii}
+\contentsline {section}{Code Listings}{viii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Problem Description}{1}
+\contentsline {section}{\numberline {1.2}Background}{2}
+\contentsline {chapter}{\numberline {2}Preliminary Literature Review}{4}
+\contentsline {section}{\numberline {2.1}Past Approaches of Solving Optimal Trade Execution}{4}
+\contentsline {section}{\numberline {2.2}Queue Reactive Model}{5}
+\contentsline {chapter}{\numberline {3}Data Source}{8}
+\contentsline {section}{\numberline {3.1}Coinbase Exchange}{8}
+\contentsline {chapter}{\numberline {4}Experimental Procedure}{10}
+\contentsline {section}{\numberline {4.1}Simulating the LOB}{10}
+\contentsline {subsection}{\numberline {4.1.1}Example Code}{10}
+\contentsline {subsection}{\numberline {4.1.2}Using Parameters to Simulate LOB}{19}
+\contentsline {section}{\numberline {4.2}Reinforcement Learning Model}{19}
+\contentsline {subsection}{\numberline {4.2.1}Reinforcement Learning Background}{19}
+\contentsline {subsection}{\numberline {4.2.2}Machine Learning Architecture}{19}
+\contentsline {chapter}{\numberline {5}Analysis}{20}
+\contentsline {section}{\numberline {5.1}Experimental Results}{20}
+\contentsline {section}{\numberline {5.2}Model Evaluation}{20}
+\contentsline {section}{\numberline {5.3}Feasibility of Model}{20}
+\contentsline {chapter}{\numberline {6}Timeline}{21}
+\contentsline {section}{\numberline {6.1}Summary of Major Work that Needs to be Done}{21}
+\contentsline {section}{\numberline {6.2}Rough Timeline}{21}
+\contentsline {chapter}{\numberline {7}Conclusion}{23}
+\contentsline {section}{\numberline {7.1}Future Work}{23}

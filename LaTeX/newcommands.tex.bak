@@ -1,0 +1,108 @@
+%%%%%% ENVIRONMENTS %%%%%%
+%\swapnumbers
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{notation}[theorem]{Notation}
+%\newtheorem{example}[theorem]{Example}
+%\newtheorem{exercise}{Exercise}
+%\newtheorem*{notes}{Notes}
+
+% For PUthesis.cls use the following definitions:
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}{Claim}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{problem}[theorem]{Problem}
+
+
+
+%%%%%% NEW COMMANDS/OPERATORS %%%%%%
+\DeclareMathOperator{\esup}{\text{ess\;sup}}
+\providecommand{\abs}[1]{\lvert#1\rvert} % absolute value function
+\renewcommand{\P}{\mathbb{P}}  % probability measure
+\renewcommand{\O}{\mathcal{O}} % order notation
+\newcommand{\PP}{\P^\star} % pricing probability measure
+\newcommand{\E}{\mathbb{E}}  % expectation
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\EE}{\E^\star}   % expectation under the pricing measure
+\newcommand{\V}{\text{Var}} % variance
+\newcommand{\F}{\mathcal{F}} % filtration
+\newcommand{\G}{\mathcal{G}} % filtration
+\renewcommand{\H}{\mathcal{H}} % filtration
+\newcommand{\Fb}{\mathbb{F}} % filtration
+\newcommand{\N}{\mathbb{N}}  % integers
+\newcommand{\R}{\mathbb{R}}  % real numbers
+%\renewcommand{\C}{\mathbb{C}}  % complex numbers
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}} % arg min operator
+\newcommand{\cpb}{c^{\mbox{\scriptsize pb}}} % protection buyer payment
+\newcommand{\cps}{c^{\mbox{\scriptsize ps}}} % protection seller payment
+\newcommand{\cds}{c^{\mbox{\scriptsize ds}}} % CDS spread
+
+\newcommand{\T}{\mathcal{T}} % tenor
+\renewcommand{\vec}[1]{\mbox{\boldmath $#1$}} % boldface 1 for the indicator function
+\newcommand{\ind}{\vec{1}}                    % boldface 1 for the indicator function
+\newcommand{\Ws}{W^\star_t}
+\newcommand{\tWs}{\widetilde{W}^\star_t}
+\newcommand{\tWz}{\widetilde{W}^0_t}
+\newcommand{\tW}{\widetilde{W}}
+
+%%%%%% Shortcut expressions %%%%%%
+\newcommand{\pb}{protection buyer}
+\newcommand{\ps}{protection seller}
+\newcommand{\BibTeX}{{\sc Bib}\TeX}
+
+%%%%%% Greeks %%%%%%
+\newcommand{\eps}{\varepsilon}
+\newcommand{\de}{\delta}
+\newcommand{\fee}{\varphi}
+\newcommand{\half}{\frac{1}{2}}
+
+%%%%%% PDEs %%%%%%%
+\newcommand{\pa}{\partial}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\wA}{\widetilde{\A}}
+\newcommand{\wlop}{\widetilde{\L}}
+\newcommand{\wmop}{\widetilde{\M}}
+\newcommand{\lbs}{\L_{BS}}
+\newcommand{\lbss}{\L_{BS^\star}}
+\newcommand{\lzero}{\L_{0}}
+\newcommand{\lone}{\L_{1}}
+\newcommand{\ltwo}{\L_{2}}
+\newcommand{\wled}{\widetilde{\L}^{\eps,\de}}
+\newcommand{\wlone}{\widetilde{\L}_1}
+\newcommand{\wltwo}{\widetilde{\L}_2}
+\newcommand{\cltwo}{\langle \L_2 \rangle}
+\newcommand{\cwltwo}{\left\langle \wltwo \right\rangle}
+\newcommand{\mone}{\M_{1}}
+\newcommand{\mtwo}{\M_{2}}
+\newcommand{\mthree}{\M_{3}}
+\newcommand{\wmone}{\widetilde{\M}_1}
+\newcommand{\fc}{\langle f \rangle}  % <f>
+
+%%%%%% OLD ONES %%%%%%
+%\newcommand{\sigbar}{\overline{\sigma}}
+%\newcommand{\sigstar}{\sigma_\star}
+%\newcommand{\CBS}{C_{BS}}
+%\newcommand{\CBSs}{C_{BS^\star}}
+%\newcommand{\BS}{Black-Scholes }
+%\newcommand{\vol}{volatility}
+%\newcommand{\SV}{stochastic volatility }
+%\newcommand{\PP}{{\mathord{I\kern -.33em P}}}
+%\newcommand{\EE}{{\mathord{I\kern -.33em E}}}
+%\newcommand{\RR}{{\mathord{I\kern -.33em R}}}
+%\newcommand{\1}{{\mathord{1\kern -.26em \text{I}}}}
+%\newcommand{\calp}{{\PP}}
+%\newcommand{\EEE}{{\EE^{\star}}}
+%\newcommand{\PPP}{{\PP^{\star}}}
+%\newcommand{\ssb}{\overline{\sigma^2}}
