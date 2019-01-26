@@ -1,16 +1,16 @@
 \section{Summary of Major Work that Needs to be Done}
 \begin{itemize}
-\item Update the above code to estimate the Poisson arrival rates of events for the model.
-\item Use the values of AES, $\lambda_i(q)$, and $\gamma_i(q$) to build a market simulation that allows for updates in real time.
-\item Build a reinforcement learning model for optimal trading execution that uses the environment from the simulation above.
-\item Compare performance to benchmark strategies and for multiple currencies.
-\item Write the thesis in \LaTeX{}.
+\item Continue collecting data
+\item Estimate parameters with full dataset
+\item Write code to simulate LOB with estimated parameters and agent decisions
+\item Run trading strategies in simulated environment and evaluate performance,
+\item Write results in thesis
 \end{itemize}
 
 \section{Rough Timeline}
 \begin{itemize}
-\item By the end of the semester in December, I hope to have code written that simulates the market using the queue reactive model.
-\item By January, I hope to have preliminary code running for a reinforcement learning model based on this simulation.
-\item By February, I hope to have revised the code, tweaked hyperparameters, collected enough data, etc. to evaluate the performance of my model with meaningful results to write my thesis.
-\item By the April deadline, I really hope to have my thesis written.
+\item By the end of February, I will have the full data-set that spans several weeks (I already have code to estimate the parameters).
+\item By the end of February, I also hope to have market simulation code written as described by the algorithm in \ref{ch:experiment}.
+\item By mid-March, I hope to have analyzed the performance of various trade execution strategies (completing the experimental procedure)
+\item I will spend the rest of March and April writing the thesis.
 \end{itemize}

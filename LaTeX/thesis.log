@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 NOV 2018 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 JAN 2019 13:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,25 +196,81 @@ LaTeX Info: Redefining \cite on input line 694.
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count104
-\lst@gtempboxa=\box28
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count104
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip54
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip55
+\skiplinenumber=\skip56
+\skiprule=\skip57
+\skiphlne=\skip58
+\skiptext=\skip59
+\skiplength=\skip60
+\algomargin=\skip61
+\skipalgocfslide=\skip62
+\algowidth=\dimen116
+\inoutsize=\dimen117
+\inoutindent=\dimen118
+\interspacetitleruled=\dimen119
+\interspacealgoruled=\dimen120
+\interspacetitleboxruled=\dimen121
+\algocf@ruledwidth=\skip63
+\algocf@inoutbox=\box28
+\algocf@inputbox=\box29
+\AlCapSkip=\skip64
+\AlCapHSkip=\skip65
+\algoskipindent=\skip66
+\algocf@nlbox=\box30
+\algocf@hangingbox=\box31
+\algocf@untilbox=\box32
+\algocf@skipuntil=\skip67
+\algocf@capbox=\box33
+\algoheightruledefault=\skip68
+\algoheightrule=\skip69
+\algotitleheightruledefault=\skip70
+\algotitleheightrule=\skip71
+\c@algocfline=\count105
+\c@algocfproc=\count106
+\c@algocf=\count107
+\algocf@algoframe=\box34
+\algocf@algobox=\box35
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count108
+\lst@gtempboxa=\box36
 \lst@token=\toks29
-\lst@length=\count105
-\lst@currlwidth=\dimen116
-\lst@column=\count106
-\lst@pos=\count107
-\lst@lostspace=\dimen117
-\lst@width=\dimen118
-\lst@newlines=\count108
-\lst@lineno=\count109
-\lst@maxwidth=\dimen119
+\lst@length=\count109
+\lst@currlwidth=\dimen122
+\lst@column=\count110
+\lst@pos=\count111
+\lst@lostspace=\dimen123
+\lst@width=\dimen124
+\lst@newlines=\count112
+\lst@lineno=\count113
+\lst@maxwidth=\dimen125
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count110
-\lst@skipnumbers=\count111
-\lst@framebox=\box29
+\c@lstnumber=\count114
+\lst@skipnumbers=\count115
+\lst@framebox=\box37
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -224,31 +280,31 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen120
-\scratchbox=\box30
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\scratchcounter=\count116
+\scratchdimen=\dimen126
+\scratchbox=\box38
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen121
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen127
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -302,17 +358,17 @@ e
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
  []
 
@@ -320,10 +376,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--49
 
 ] (./Chapters/abstract.tex) [3
 
-] (./thesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+] (./Chapters/acknowledgments.tex) [4
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+]
+(./thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 1.
@@ -335,39 +393,57 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [4
+) [5
 
 
 ])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [5]
+ [6]
 (./thesis.lot)
 \tf@lot=\write4
 \openout4 = `thesis.lot'.
 
- [6
+ [7
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [7
+ [8
 
 
 ] (./thesis.lol)
 \tf@lol=\write6
 \openout6 = `thesis.lol'.
 
- [8
+ [9
 
 
 ]
-\c@lstlisting=\count118
+\c@lstlisting=\count122
 
 Chapter 1.
+(./Chapters/progress.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+ [1
+
+
+
+]) [2]
+Chapter 2.
+(./Chapters/timeline.tex [3
+
+]) [4]
+Chapter 3.
 (./Chapters/introduction.tex
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -375,13 +451,11 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [1
+ [5
 
-
-
-] [2]) [3]
-Chapter 2.
-(./Chapters/literature_review.tex [4
+] [6]) [7]
+Chapter 4.
+(./Chapters/literature_review.tex [8
 
 ]
 Missing character: There is no ‚ in font cmr12!
@@ -389,15 +463,12 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [5] [6]) [7]
-Chapter 3.
+ [9]) [10] [11]
+Chapter 5.
 (./Chapters/data.tex
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -411,96 +482,306 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-) [8
+ [12
 
-] [9]
-Chapter 4.
+]
+<Figures/12_30_18_LOB.png, id=78, 433.62pt x 289.08pt>
+File: Figures/12_30_18_LOB.png Graphic file (type png)
+
+<use Figures/12_30_18_LOB.png>
+Package pdftex.def Info: Figures/12_30_18_LOB.png used on input line 12.
+(pdftex.def)             Requested size: 346.89731pt x 231.27754pt.
+ [13]
+<Figures/12_30_18_Updates.png, id=83, 726.715pt x 261.97874pt>
+File: Figures/12_30_18_Updates.png Graphic file (type png)
+
+<use Figures/12_30_18_Updates.png>
+Package pdftex.def Info: Figures/12_30_18_Updates.png used on input line 22.
+(pdftex.def)             Requested size: 346.89731pt x 125.0568pt.
+) [14 <./Figures/12_30_18_LOB.png>] [15 <./Figures/12_30_18_Updates.png>]
+Chapter 6.
 (./Chapters/experiment.tex
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
+Missing character: There is no ¶ in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
- [10
+Missing character: There is no ¶ in font cmr12!
+ [16
+
+] [17]
+<Figures/pos_-2.png, id=99, 433.62pt x 289.08pt>
+File: Figures/pos_-2.png Graphic file (type png)
+ <use Figures/pos_-2.png>
+Package pdftex.def Info: Figures/pos_-2.png used on input line 27.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/neg_-2.png, id=100, 433.62pt x 289.08pt>
+File: Figures/neg_-2.png Graphic file (type png)
+ <use Figures/neg_-2.png>
+Package pdftex.def Info: Figures/neg_-2.png used on input line 30.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/pos_-1.png, id=101, 433.62pt x 289.08pt>
+File: Figures/pos_-1.png Graphic file (type png)
+ <use Figures/pos_-1.png>
+Package pdftex.def Info: Figures/pos_-1.png used on input line 33.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/neg_-1.png, id=102, 433.62pt x 289.08pt>
+File: Figures/neg_-1.png Graphic file (type png)
+ <use Figures/neg_-1.png>
+Package pdftex.def Info: Figures/neg_-1.png used on input line 36.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/pos_1.png, id=103, 433.62pt x 289.08pt>
+File: Figures/pos_1.png Graphic file (type png)
+ <use Figures/pos_1.png>
+Package pdftex.def Info: Figures/pos_1.png used on input line 39.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/neg_1.png, id=104, 433.62pt x 289.08pt>
+File: Figures/neg_1.png Graphic file (type png)
+ <use Figures/neg_1.png>
+Package pdftex.def Info: Figures/neg_1.png used on input line 42.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/pos_2.png, id=105, 433.62pt x 289.08pt>
+File: Figures/pos_2.png Graphic file (type png)
+ <use Figures/pos_2.png>
+Package pdftex.def Info: Figures/pos_2.png used on input line 45.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/neg_2.png, id=106, 433.62pt x 289.08pt>
+File: Figures/neg_2.png Graphic file (type png)
+ <use Figures/neg_2.png>
+Package pdftex.def Info: Figures/neg_2.png used on input line 48.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+[18] [19 <./Figures/pos_-2.png> <./Figures/neg_-2.png> <./Figures/pos_-1.png> <
+./Figures/neg_-1.png> <./Figures/pos_1.png> <./Figures/neg_1.png> <./Figures/po
+s_2.png> <./Figures/neg_2.png>] [20]
+<Figures/QQ_pos_k-2.png, id=124, 433.62pt x 289.08pt>
+File: Figures/QQ_pos_k-2.png Graphic file (type png)
+
+<use Figures/QQ_pos_k-2.png>
+Package pdftex.def Info: Figures/QQ_pos_k-2.png used on input line 131.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_pos_k-2.png, id=125, 433.62pt x 289.08pt>
+File: Figures/hist_pos_k-2.png Graphic file (type png)
+
+<use Figures/hist_pos_k-2.png>
+Package pdftex.def Info: Figures/hist_pos_k-2.png used on input line 134.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_pos_k-1.png, id=126, 433.62pt x 289.08pt>
+File: Figures/QQ_pos_k-1.png Graphic file (type png)
+
+<use Figures/QQ_pos_k-1.png>
+Package pdftex.def Info: Figures/QQ_pos_k-1.png used on input line 137.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_pos_k-1.png, id=127, 433.62pt x 289.08pt>
+File: Figures/hist_pos_k-1.png Graphic file (type png)
+
+<use Figures/hist_pos_k-1.png>
+Package pdftex.def Info: Figures/hist_pos_k-1.png used on input line 140.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_pos_k1.png, id=128, 433.62pt x 289.08pt>
+File: Figures/QQ_pos_k1.png Graphic file (type png)
+
+<use Figures/QQ_pos_k1.png>
+Package pdftex.def Info: Figures/QQ_pos_k1.png used on input line 143.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_pos_k1.png, id=129, 433.62pt x 289.08pt>
+File: Figures/hist_pos_k1.png Graphic file (type png)
+
+<use Figures/hist_pos_k1.png>
+Package pdftex.def Info: Figures/hist_pos_k1.png used on input line 146.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_pos_k2.png, id=130, 433.62pt x 289.08pt>
+File: Figures/QQ_pos_k2.png Graphic file (type png)
+
+<use Figures/QQ_pos_k2.png>
+Package pdftex.def Info: Figures/QQ_pos_k2.png used on input line 149.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_pos_k2.png, id=131, 433.62pt x 289.08pt>
+File: Figures/hist_pos_k2.png Graphic file (type png)
+
+<use Figures/hist_pos_k2.png>
+Package pdftex.def Info: Figures/hist_pos_k2.png used on input line 152.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_neg_k-2.png, id=132, 433.62pt x 289.08pt>
+File: Figures/QQ_neg_k-2.png Graphic file (type png)
+
+<use Figures/QQ_neg_k-2.png>
+Package pdftex.def Info: Figures/QQ_neg_k-2.png used on input line 165.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_neg_k-2.png, id=133, 433.62pt x 289.08pt>
+File: Figures/hist_neg_k-2.png Graphic file (type png)
+
+<use Figures/hist_neg_k-2.png>
+Package pdftex.def Info: Figures/hist_neg_k-2.png used on input line 168.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_neg_k-1.png, id=134, 433.62pt x 289.08pt>
+File: Figures/QQ_neg_k-1.png Graphic file (type png)
+
+<use Figures/QQ_neg_k-1.png>
+Package pdftex.def Info: Figures/QQ_neg_k-1.png used on input line 171.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_neg_k-1.png, id=135, 433.62pt x 289.08pt>
+File: Figures/hist_neg_k-1.png Graphic file (type png)
+
+<use Figures/hist_neg_k-1.png>
+Package pdftex.def Info: Figures/hist_neg_k-1.png used on input line 174.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_neg_k1.png, id=136, 433.62pt x 289.08pt>
+File: Figures/QQ_neg_k1.png Graphic file (type png)
+
+<use Figures/QQ_neg_k1.png>
+Package pdftex.def Info: Figures/QQ_neg_k1.png used on input line 177.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_neg_k1.png, id=137, 433.62pt x 289.08pt>
+File: Figures/hist_neg_k1.png Graphic file (type png)
+
+<use Figures/hist_neg_k1.png>
+Package pdftex.def Info: Figures/hist_neg_k1.png used on input line 180.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/QQ_neg_k2.png, id=138, 433.62pt x 289.08pt>
+File: Figures/QQ_neg_k2.png Graphic file (type png)
+
+<use Figures/QQ_neg_k2.png>
+Package pdftex.def Info: Figures/QQ_neg_k2.png used on input line 183.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+<Figures/hist_neg_k2.png, id=139, 433.62pt x 289.08pt>
+File: Figures/hist_neg_k2.png Graphic file (type png)
+
+<use Figures/hist_neg_k2.png>
+Package pdftex.def Info: Figures/hist_neg_k2.png used on input line 186.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+ [21] [22 <./Figures/QQ_pos_k-2.png> <./Figures/hist_pos_k-2.png> <./Figures/QQ
+_pos_k-1.png> <./Figures/hist_pos_k-1.png> <./Figures/QQ_pos_k1.png> <./Figures
+/hist_pos_k1.png> <./Figures/QQ_pos_k2.png> <./Figures/hist_pos_k2.png>] [23 <.
+/Figures/QQ_neg_k-2.png> <./Figures/hist_neg_k-2.png> <./Figures/QQ_neg_k-1.png
+> <./Figures/hist_neg_k-1.png> <./Figures/QQ_neg_k1.png> <./Figures/hist_neg_k1
+.png> <./Figures/QQ_neg_k2.png> <./Figures/hist_neg_k2.png>] <Figures/pos_pos.p
+ng, id=166, 585.18625pt x 327.2225pt>
+File: Figures/pos_pos.png Graphic file (type png)
+
+<use Figures/pos_pos.png>
+Package pdftex.def Info: Figures/pos_pos.png used on input line 198.
+(pdftex.def)             Requested size: 346.89731pt x 193.9833pt.
+
+<Figures/pos_neg.png, id=167, 579.16376pt x 327.2225pt>
+File: Figures/pos_neg.png Graphic file (type png)
+
+<use Figures/pos_neg.png>
+Package pdftex.def Info: Figures/pos_neg.png used on input line 208.
+(pdftex.def)             Requested size: 346.89731pt x 195.99548pt.
+
+<Figures/neg_neg.png, id=168, 579.16376pt x 331.2375pt>
+File: Figures/neg_neg.png Graphic file (type png)
+
+<use Figures/neg_neg.png>
+Package pdftex.def Info: Figures/neg_neg.png used on input line 218.
+(pdftex.def)             Requested size: 346.89731pt x 198.40033pt.
+ [24 <./Figures/pos_pos.png>] [25 <./Figures/pos_neg.png>] [26 <./Figures/neg_n
+eg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+
+ []
+
+
+Overfull \hbox (0.79999pt too wide) detected at line 256
+|[]|
+ []
+
+[27]
+Overfull \hbox (0.79999pt too wide) detected at line 280
+|[]|
+ []
+
+) [28] [29]
+Chapter 7.
+(./Chapters/analysis.tex) [30
 
 ]
+Chapter 8.
+(./Chapters/code_listings.tex
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(./Code/AES.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+(./Code/imports.tex [31
 
-[11]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 34.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
+]) (./Code/collect_data.tex
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+ [32] [33])
+(./Code/parse_file.tex [34] [35] [36]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 80.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 34.
- [12]
-[13] [14] [15]) <Figures/LOB_Picture.png, id=86, 400.49625pt x 279.0425pt>
-File: Figures/LOB_Picture.png Graphic file (type png)
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 80.
+ [37] [38]
+[39]) (./Code/correlated_poisson.tex [40])) [41]
+Chapter 9.
+(./Chapters/conclusion.tex) (./thesis.bbl [42
 
-<use Figures/LOB_Picture.png>
-Package pdftex.def Info: Figures/LOB_Picture.png used on input line 11.
-(pdftex.def)             Requested size: 346.89731pt x 241.71332pt.
- (./Code/first_update.tex [16 <./Figures/LOB_Picture.png>] [17])
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- (./Code/later_update.tex [18])) [19]
-Chapter 5.
-(./Chapters/analysis.tex) [20
-
-]
-Chapter 6.
-(./Chapters/timeline.tex
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
- [21
-
-]) [22]
-Chapter 7.
-(./Chapters/conclusion.tex) (./thesis.bbl [23
+] [43
 
 ]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ® in font cmr12!
- [24
+) [44] (./thesis.aux)
 
-]) [25] (./thesis.aux) ) 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 5157 strings out of 492995
- 68673 string characters out of 6132704
- 276301 words of memory out of 5000000
- 8563 multiletter control sequences out of 15000+600000
- 13862 words of font info for 57 fonts, out of 8000000 for 9000
+ 6371 strings out of 492995
+ 88808 string characters out of 6132704
+ 305188 words of memory out of 5000000
+ 9724 multiletter control sequences out of 15000+600000
+ 15516 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,1587b,1677s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
-2.pfb>
-Output written on thesis.pdf (33 pages, 214555 bytes).
+ 41i,20n,43p,1746b,3920s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (53 pages, 3302904 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

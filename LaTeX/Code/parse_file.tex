@@ -1,0 +1,172 @@
+def parse_file_json(file_name):
+    with open(file_name, "r") as f:
+        data = [json.loads(line) for line in f]
+    starting_time = parser.parse(data[0][0])
+    starting_bids = data[0][1]
+    starting_asks = data[0][2]
+    
+    raw_updates = data[1:]
+    
+    Bids = {}
+    Asks = {}    
+    
+    updates = []
+    
+    for price, amount in starting_bids:
+        Bids[int(round((float(price)*100)))] = float(amount)
+    for price, amount in starting_asks:
+        Asks[int(round((float(price)*100)))] = float(amount)
+        
+    for u in raw_updates:
+        price = int(round((float(u["price"])*100)))  
+        side = u["side"]
+        amount = float(u["amount"])
+        time = parser.parse(u["time"])
+        
+        if side == "buy":
+            change = amount - Bids.get(price,0)
+        else:
+            change = amount - Asks.get(price,0)
+        
+        updates.append({\
+            "Bids": copy.copy(Bids), \
+            "Asks": copy.copy(Asks), \
+            "time": time, \
+            "side": side, \
+            "price": price, \
+            "change": change            
+        })
+        
+        if side == "buy":
+            if u["amount"] == "0":
+                del Bids[price]
+            else:
+                Bids[price] = float(amount)
+        else:
+            if u["amount"] == "0":
+                del Asks[price]
+            else:
+                Asks[price] = float(amount)   
+
+    return(starting_time, updates)
+    
+def shortened_updates(file_name,K):
+    starting_time, updates = parse_file_json(file_name)
+    
+    res = []
+    
+    # Caluclate first reference price
+    starting_bids = updates[0]['Bids']
+    starting_asks = updates[0]['Asks']
+    sorted_bids = list(reversed(sorted(starting_bids.items())))
+    sorted_asks = list(sorted(starting_asks.items()))        
+    best_bid = sorted_bids[0][0]
+    best_ask = sorted_asks[0][0]
+    if ((best_bid + best_ask) % 2) != 0:
+        old_reference_price = round((best_bid+best_ask)/2, 1)
+    else:
+        old_reference_price = round((best_bid+best_ask+1)/2, 1)
+            
+    for u in updates:      
+        # Find reference price
+        sorted_bids = list(reversed(sorted(u['Bids'].items())))
+        sorted_asks = list(sorted(u['Asks'].items()))        
+        best_bid = sorted_bids[0][0]
+        best_ask = sorted_asks[0][0]
+        if ((best_bid + best_ask) % 2) != 0:
+            reference_price = round((best_bid+best_ask)/2, 1)
+        else:
+            middle = (best_bid+best_ask)/2
+            if old_reference_price > middle:
+                reference_price = round((best_bid+best_ask)/2 + 0.5,1)
+            else:
+                old_reference_price = round((best_bid+best_ask)/2 - 0.5,1)
+                
+        shortened_book = OrderedDict([(k,0) for k in range(-K,K+1) if k != 0])
+        first_bid = int(round(reference_price - 0.5))
+        first_ask = int(round(reference_price + 0.5))        
+        for k in range(-K,0):
+            shortened_book[k] = u['Bids'].get(first_bid + k + 1,0)
+        for k in range(1,K+1):
+            shortened_book[k] = u['Asks'].get(first_ask + k - 1,0)
+            
+        # Find k from the price. Keep track of event if
+        # abs(k) <= K
+        price = u["price"]
+        k = price - reference_price
+        if k < 0:
+            k = int(round(k - 0.5))
+        else:
+            k = int(round(k + 0.5))
+        if abs(k) <= K:                 
+            res.append({
+                'reference_price': reference_price,
+                'LOB': copy.copy(shortened_book),
+                'k': k,
+                'change': u['change'],
+                'time': u['time']
+            })
+        
+        old_reference_price = reference_price
+
+    return starting_time, res
+    
+def processed_updates(file_name,K):
+    starting_time,updates = shortened_updates(file_name,10)
+    grouped_by_time = OrderedDict([(k, list(v)) for k, v in itertools.groupby(updates, key=lambda x:x['time'])])
+    # Contains dictionary of time, reference price, order book, list of changes
+    cleaned_updates = []
+    for t, us in grouped_by_time.items():
+        if len(us) == 1:
+            u = us[0]
+            cleaned_updates.append(copy.copy(u))
+        else:
+            new_update = {'time': t}
+            us = sorted(us, key=lambda u:-abs(u['k']))
+            grouped_by_k = OrderedDict((k, list(v)) for k, v in itertools.groupby(us, key=lambda u:u['k']))
+            reference_k = list(grouped_by_k.keys())[0]
+            new_update['reference_price'] = grouped_by_k[reference_k][0]['reference_price']
+            new_update['LOB'] = copy.copy(grouped_by_k[reference_k][0]['LOB'])
+            events = []
+            for k in grouped_by_k:
+                combined_change = 0
+                for u in grouped_by_k[k]:
+                    combined_change = combined_change + u['change']
+                events.append((k,combined_change))
+            for k,change in events:
+                new_update = copy.deepcopy(new_update)
+                new_update['k'] = k
+                new_update['change'] = change
+                cleaned_updates.append(new_update)
+    
+    combined_updates = []
+    i = 0
+    while i < len(cleaned_updates):
+        reference_price = cleaned_updates[i]['reference_price']
+        j = i
+        updates_at_reference = []
+        while (j < len(cleaned_updates)) and (cleaned_updates[j]['reference_price'] == reference_price):
+            updates_at_reference.append(cleaned_updates[j])
+            j += 1
+        updates_at_reference = sorted(updates_at_reference,key=lambda u:u['k'])
+        grouped_by_k = OrderedDict((k, list(v)) for k, v in itertools.groupby(updates_at_reference, key=lambda u:u['k']))
+        for k,us in grouped_by_k.items():
+            us = copy.deepcopy(sorted(us,key=lambda u:u['time']))
+            keep_index = [True for u in us]
+            for m in reversed(range(1,len(us))):
+                quick_same_order = (us[m]['time'] - us[m-1]['time']).total_seconds() < 0.01
+                same_sign = (us[m]['change'] * us[m-1]['change']) > 0
+                if quick_same_order and same_sign:
+                    us[m-1]['change'] += us[m]['change']
+                    keep_index[m] = False
+            for (u,keep) in zip(us, keep_index):
+                if keep:
+                    combined_updates.append(u)
+        i = j + 1
+
+    combined_updates = sorted(combined_updates,key=lambda u:u['time'])
+    
+    return starting_time, combined_updates
+
+starting_time, combined_updates = processed_updates('12_28_18.json',10)
+len(combined_updates)

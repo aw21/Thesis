@@ -9,9 +9,10 @@
 \usepackage{setspace}
 \usepackage[round, longnamesfirst]{natbib} % for nice bibliography
 \usepackage{url}
-
+\usepackage{algorithm2e}
 \usepackage{listings}
 \usepackage{color}
+\RestyleAlgo{boxruled}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -26,12 +27,17 @@
   keywordstyle=\color{blue},       % keyword style
   stringstyle=\color{mymauve},     % string literal style
 }
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
 
 %Do not un-comment the next two lines
 %Included for Gather Purpose only in WinEdt (ignore for other editors):
 %input "./Bibliography/refs.bib"
 
-\title{Using Reinforcement Learning With Simulated Limit Order Book Data To Optimize Trade Execution: Fall Term Report}
+\title{Using Simulated Limit Order Book Data To Evaluate Optimal Trade Execution Algorithms: Interim Report}
 \submitted{June 2019}  %graduation date
 \author{Andrew Wang}
 \advisor{Professor Mykhaylo Shkolnikov} %
@@ -42,11 +48,17 @@
 \input{Chapters/abstract}
 }
 
-%\acknowledgements{
-%\input{Chapters/acknowledgments}
-%}
+\acknowledgements{
+\input{Chapters/acknowledgments}
+}
 
 \begin{document}
+
+\chapter{Summary of Progress}\label{ch:progress}
+\input{Chapters/progress}
+
+\chapter{Timeline}
+\input{Chapters/timeline}
 
 \chapter{Introduction}\label{ch:intro}  %insert chapter title
 \input{Chapters/introduction} % and path to the .tex file (no need to include .tex)
@@ -63,22 +75,11 @@
 \chapter{Analysis}
 \input{Chapters/analysis}
 
-\chapter{Timeline}
-\input{Chapters/timeline}
+\chapter{Code Listings}
+\input{Chapters/code_listings.tex}
 
 \chapter{Conclusion}
 \input{Chapters/conclusion}
-
-% \chapter{Development of the Department of Operations Research and Financial Engineering}  continue adding chapter titles
-% \input{Chapters/development}
-
-% \chapter{Analysis of Problem}
-% \input{Chapters/analysis}
-
-% \appendix
-% \chapter{Code}
-% \input{Chapters/code}
-
 
 \bibliographystyle{apa}
 \bibliography{Bibliography/refs} \label{bib}

@@ -1,0 +1,58 @@
+class Level2(Client):
+    global file
+    num_updates = 0
+      
+    # Receives message from API websocket
+    def on_message(self, message):
+        # Get snapshot of LOB from API and build internal representation
+        if message['type'] == 'snapshot':
+            self.starting_time = datetime.datetime.now(datetime.timezone.utc)
+            print('Starting time: {}'.format(self.starting_time))
+            print()
+            json.dump([str(datetime.datetime.now(datetime.timezone.utc)), message['bids'], message['asks']],file)
+            file.write("\n")
+
+            
+        # Update order book when new event occurs
+        if message['type'] == 'l2update' and 'time' in message:
+            for (side, price, amount) in message['changes']:
+                json.dump({
+                    "side": side, \
+                    "price": price, \
+                    "amount": amount, \
+                    "time": message['time']      
+                },file)
+                file.write("\n")
+                self.num_updates += 1
+                if self.num_updates % 1000 == 0:
+                    print("Number of updates: {}".format(self.num_updates))
+                    print("Most Recent Update: {}".format((side, price, amount)))
+                    print("Time: {}".format(message['time']))
+                    print()
+                    
+    def on_error(message, reason):
+        super().on_error(message,reason)
+        print("Error: {}".format(message))
+            
+
+file = open("1_4_19_Long.json","w")
+loop = asyncio.get_event_loop()
+channel = Channel('level2', 'ETC-USD')
+ws = Level2(loop, channel)
+
+async def my_task(seconds):
+    global loop
+    print('Collecting data for {} seconds'.format(seconds))
+    await asyncio.sleep(seconds)
+    await ws.close()
+    return "Finished Task"
+
+try:
+    task_obj = loop.create_task(my_task(seconds=86400))
+    loop.run_until_complete(task_obj)
+except Exception as e:
+    print(e)
+finally:
+    loop.close()
+    file.close()
+    print("Finished collecting data")

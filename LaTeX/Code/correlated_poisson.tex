@@ -1,0 +1,30 @@
+import numpy as np
+from scipy.stats import norm
+
+n = 10000
+y = [np.random.multivariate_normal(mean=[0,0],cov=[[1,-0.1],[-0.1,1]]) for _ in range(n)]
+# Correlated multivariate random variables
+y1,y2 = zip(*y)
+
+def inverse_PDF_Poisson(average, u):
+    x = 0
+    p = np.exp(-average)
+    s = p
+    while u > s:
+        x += 1
+        p = p * average / x
+        s = s + p
+    return x  
+
+lambda1 = 2
+lambda2 = 3
+
+# Poisson random variables
+x1 = [inverse_PDF_Poisson(lambda1,norm.cdf(y)) for y in y1]
+x2 = [inverse_PDF_Poisson(lambda2,norm.cdf(y)) for y in y2]
+
+print("Correlation Matrix:")
+np.corrcoef(x1,x2)
+
+print("Mean of x1: {}".format(np.mean(x1)))
+print("Mean of x2: {}".format(np.mean(x2)))

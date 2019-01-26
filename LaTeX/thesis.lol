@@ -1,3 +1,4 @@
-\contentsline {lstlisting}{\numberline {4.1}Receiving LOB Data from Coinbase Pro and Calculating AES}{11}
-\contentsline {lstlisting}{\numberline {4.2}Processing Next Order and Updating LOB}{16}
-\contentsline {lstlisting}{\numberline {4.3}Updated LOB after 3 Minutes}{18}
+\contentsline {lstlisting}{\numberline {8.1}Software Requirements}{31}
+\contentsline {lstlisting}{\numberline {8.2}Receiving LOB Data from Coinbase Pro}{32}
+\contentsline {lstlisting}{\numberline {8.3}Building the Shortened LOB}{34}
+\contentsline {lstlisting}{\numberline {8.4}Generating Correlated Poisson Variables using Copulas}{40}
