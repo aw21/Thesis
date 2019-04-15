@@ -1,0 +1,50 @@
+\contentsline {section}{Abstract}{iii}
+\contentsline {section}{Acknowledgments}{iv}
+\contentsline {section}{List of Tables}{ix}
+\contentsline {section}{List of Figures}{x}
+\contentsline {section}{Code Listings}{xi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Problem Description}{1}
+\contentsline {section}{\numberline {1.2}The Limit Order Book}{2}
+\contentsline {chapter}{\numberline {2}Literature Review}{4}
+\contentsline {section}{\numberline {2.1}Past Approaches to Analyzing Optimal Trade Execution}{4}
+\contentsline {section}{\numberline {2.2}LOB Queuing Model}{5}
+\contentsline {chapter}{\numberline {3}Data Source}{8}
+\contentsline {section}{\numberline {3.1}Coinbase Exchange}{8}
+\contentsline {section}{\numberline {3.2}Data Collection}{9}
+\contentsline {chapter}{\numberline {4}Modelling the LOB}{12}
+\contentsline {section}{\numberline {4.1}The Modified Queuing Model}{12}
+\contentsline {section}{\numberline {4.2}Building An Abbreviated Order Book}{14}
+\contentsline {section}{\numberline {4.3}Event Size Estimates}{14}
+\contentsline {section}{\numberline {4.4}Arrival Rate Estimates}{17}
+\contentsline {section}{\numberline {4.5}Arrival Correlations}{20}
+\contentsline {chapter}{\numberline {5}Simulating the LOB}{23}
+\contentsline {section}{\numberline {5.1}Generating Correlated Poisson Variables}{23}
+\contentsline {section}{\numberline {5.2}Backwards Simulation}{25}
+\contentsline {section}{\numberline {5.3}Simulation Algorithm}{30}
+\contentsline {chapter}{\numberline {6}Evaluating Trade Execution Performance}{32}
+\contentsline {section}{\numberline {6.1}Trade Execution Strategies}{32}
+\contentsline {subsection}{\numberline {6.1.1}Impact-Driven Algorithms}{33}
+\contentsline {subsection}{\numberline {6.1.2}Cost-Driven Algorithms}{34}
+\contentsline {subsection}{\numberline {6.1.3}Opportunistic Algorithms}{34}
+\contentsline {section}{\numberline {6.2}Trade Execution Simulation}{34}
+\contentsline {subsection}{\numberline {6.2.1}The Initial LOB}{35}
+\contentsline {subsection}{\numberline {6.2.2}TWAP Strategy}{35}
+\contentsline {subsection}{\numberline {6.2.3}VWAP Strategy}{36}
+\contentsline {chapter}{\numberline {7}Conclusion}{42}
+\contentsline {section}{\numberline {7.1}Summary of Results}{42}
+\contentsline {section}{\numberline {7.2}Future Research}{43}
+\contentsline {subsection}{\numberline {7.2.1}Improving the Queuing Model}{43}
+\contentsline {subsection}{\numberline {7.2.2}Further Trading Execution Strategy Testing}{44}
+\contentsline {subsection}{\numberline {7.2.3}Applying the Model to Different Securities}{44}
+\contentsline {chapter}{\numberline {A}Code Listings}{46}
+\contentsline {section}{\numberline {A.1}Software Dependencies}{46}
+\contentsline {section}{\numberline {A.2}Raw Data Collection}{47}
+\contentsline {section}{\numberline {A.3}Raw Data Processing}{48}
+\contentsline {section}{\numberline {A.4}Calculating Average Event Sizes and Arrival Rates}{52}
+\contentsline {section}{\numberline {A.5}Calculating Arrival Correlations}{53}
+\contentsline {section}{\numberline {A.6}Generating Correlated Poisson Variables}{54}
+\contentsline {section}{\numberline {A.7}Simulation with Market Orders}{55}
+\contentsline {section}{\numberline {A.8}Trade Execution Testing}{58}
+\contentsline {subsection}{\numberline {A.8.1}TWAP Testing}{58}
+\contentsline {subsection}{\numberline {A.8.2}VWAP Testing}{58}

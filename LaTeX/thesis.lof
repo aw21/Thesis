@@ -1,2 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces LOB Sample}}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces First 20 LOB Updates for December 30, 2018}}{11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Event Sizes Compared to Exponential Distribution (4 Positions Closest to $p_0$)}}{15}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Inter-Arrival Times for Positive Events Compared to Exponential Distribution (4 Positions Closest to $p_0$)}}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Inter-Arrival Times for Negative Events Compared to Exponential Distribution (4 Positions Closest to $p_0$)}}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Correlation Matrix for $N^{+}_i(t), N^{+}_j(t)$, $t$ = 60 seconds}}{21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Correlation Matrix for $N^{+}_i(t), N^{-}_j(t)$, $t$ = 60 seconds}}{22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Correlation Matrix for $N^{-}_i(t), N^{-}_j(t)$, $t$ = 60 seconds}}{22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bid Arrivals over $T$ = 600 seconds}}{28}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Ask Arrivals over $T$ = 600 seconds}}{29}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

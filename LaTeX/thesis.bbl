@@ -1,0 +1,126 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Alfonsi and Schied}{2007}]{A2}
+Alfonsi, A. and Schied, A. (2007).
+\newblock Optimal trade execution and absence of price manipulations in limit
+  order book models.
+\newblock {\em Quantitative Finance}, 1(1):143--157.
+
+\bibitem[\protect\astroncite{Almgren and Chriss}{1999}]{A1}
+Almgren, R. and Chriss, N. (1999).
+\newblock Optimal execution of portfolio transactions.
+\newblock {\em Journal of Risk}, 3(2):5--39.
+
+\bibitem[\protect\astroncite{Bae and Kreinin}{2017}]{A7}
+Bae, T. and Kreinin, A. (2017).
+\newblock A backward construction and simulation of correlated poisson
+  processes.
+\newblock {\em Journal of Statistical Computation and Simulation},
+  87(8)(8):1593--1607.
+
+\bibitem[\protect\astroncite{Bouchaud et~al.}{2002}]{A10b}
+Bouchaud, J.-P., Mezard, M., and Potters, M. (2002).
+\newblock Statistical properties of stock order books: Empirical results and
+  models.
+\newblock {\em Quantitative Finance}, 2(4):251--256.
+
+\bibitem[\protect\astroncite{{Coinbase}}{2018}]{L2}
+{Coinbase} (2018).
+\newblock Coinbase markets trading rules.
+\newblock \url{https://www.coinbase.com/legal/trading_rules?locale=en-US}.
+\newblock Accessed: December 28, 2018.
+
+\bibitem[\protect\astroncite{{CoinMarketCap}}{2018}]{L1}
+{CoinMarketCap} (2018).
+\newblock Coinbase pro market cap.
+\newblock \url{https://coinmarketcap.com/exchanges/coinbase-pro/}.
+\newblock Accessed: December 28, 2018.
+
+\bibitem[\protect\astroncite{Cont et~al.}{2010}]{A6b}
+Cont, R., Stoikov, S., and Talreja, R. (2010).
+\newblock A stochastic model for order book dynamics.
+\newblock {\em Operations Research}, 58(3):iii--772.
+
+\bibitem[\protect\astroncite{El~Euch et~al.}{2018}]{A9}
+El~Euch, O., Fukasawa, M., and Rosenbaum, M. (2018).
+\newblock The microstructural foundations of leverage effect and rough
+  volatility.
+\newblock {\em Finance and Stochastics}, 22(2):241--280.
+
+\bibitem[\protect\astroncite{Forsyth et~al.}{2012}]{A1b}
+Forsyth, P., Kennedy, J., Tse, S., and Windcliff, H. (2012).
+\newblock Optimal trade execution: A mean quadratic variation approach.
+\newblock {\em Journal of Economic Dynamics and Control}, 36(12):1971--1991.
+
+\bibitem[\protect\astroncite{Gatheral and Schied}{2011}]{A1a}
+Gatheral, J. and Schied, A. (2011).
+\newblock Optimal trade execution under geometric brownian motion in the
+  almgren and chriss framework.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  14(3):353--368.
+
+\bibitem[\protect\astroncite{Hollifield et~al.}{2004}]{A10a}
+Hollifield, B., Miller, R.~A., and Sandås, P. (2004).
+\newblock Empirical analysis of limit order markets.
+\newblock {\em The Review of Economic Studies}, 71(4)(4):1027--1063.
+
+\bibitem[\protect\astroncite{Huang et~al.}{2013}]{A6}
+Huang, W., Lehalle, C.-A., and Rosenbaum, M. (2013).
+\newblock Simulating and analyzing order book data: The queue-reactive model.
+\newblock {\em Journal of the American Statistical Association},
+  110(509):107--122.
+
+\bibitem[\protect\astroncite{Inouye et~al.}{2017}]{A8}
+Inouye, D., Yang, E., Allen, G., and Ravikumar, P. (2017).
+\newblock A review of multivariate distributions for count data derived from
+  the poisson distribution.
+\newblock {\em Wiley Interdisciplinary Reviews: Computational statistics},
+  9(3):1--40.
+
+\bibitem[\protect\astroncite{Labadie and Lehalle}{2010}]{labadie:hal-00590283}
+Labadie, M. and Lehalle, C.-A. (2010).
+\newblock {Optimal Algorithmic Trading and Market Microstructure}.
+\newblock Technical report, CAMS.
+
+\bibitem[\protect\astroncite{Lim and Coggins}{2005}]{A5}
+Lim, M. and Coggins, R. (2005).
+\newblock Optimal trade execution: An evolutionary approach.
+\newblock {\em The 2005 IEEE Congress on Evolutionary Computation},
+  2:1045--1052.
+
+\bibitem[\protect\astroncite{Nevmyvaka et~al.}{2006}]{A3}
+Nevmyvaka, Y., Feng, Y., and Kearns, M. (2006).
+\newblock Reinforcement learning for optimized trade execution.
+\newblock In {\em Proceedings of the 23rd International Conference on Machine
+  Learning}, ICML '06, pages 673--680, New York, NY, USA. ACM.
+
+\bibitem[\protect\astroncite{Obizhaeva and Wang}{2013}]{A11}
+Obizhaeva, A. and Wang, J. (2013).
+\newblock Optimal trading strategy and supply/demand dynamics.
+\newblock {\em Journal of Financial Markets}, 16(1):1--32.
+
+\bibitem[\protect\astroncite{{Python Software Foundation}}{2018}]{L3}
+{Python Software Foundation} (2018).
+\newblock Copra.
+\newblock \url{https://pypi.org/project/copra/}.
+\newblock Accessed: December 28, 2018.
+
+\bibitem[\protect\astroncite{Ross}{2012}]{B1}
+Ross, S.~M. (2012).
+\newblock {\em Simulation, Fifth Edition}.
+\newblock Academic Press, Inc., Orlando, FL, USA.
+
+\bibitem[\protect\astroncite{Smith et~al.}{2003}]{A6a}
+Smith, E., Farmer, J.~D., Gillemot, L., and Krishnamurthy, S. (2003).
+\newblock Statistical theory of the continuous double auction.
+\newblock {\em Quantitative Finance}, 3(6):481--514.
+
+\bibitem[\protect\astroncite{Spooner et~al.}{2018}]{A4}
+Spooner, T., Fearnley, J., Savani, R., and Koukorinis, A. (2018).
+\newblock Market making via reinforcement learning.
+\newblock In {\em Proceedings of the 17th International Conference on
+  Autonomous Agents and MultiAgent Systems}, AAMAS '18, pages 434--442,
+  Richland, SC. International Foundation for Autonomous Agents and Multiagent
+  Systems.
+
+\end{thebibliography}

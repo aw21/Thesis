@@ -1,2 +1,19 @@
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Coca-Cola Limit Order Book}}{2}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Coca-Cola Updated Limit Order Book}}{3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Queuing Model Positions with $p_0 = 48.695$}}{6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Event Size and Arrival Rate Parameter Estimates}}{16}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Actual vs. Desired Correlation Using Gaussian Copula, $n=10000$}}{26}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Starting LOB for Simulation. $p_0 = 516.5$ cents}}{35}
+\contentsline {table}{\numberline {6.2}{\ignorespaces TWAP Strategy Order Example}}{37}
+\contentsline {table}{\numberline {6.3}{\ignorespaces TWAP Strategy Performance}}{38}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Adjusted Rates for VWAP Strategy Simulation}}{38}
+\contentsline {table}{\numberline {6.5}{\ignorespaces VWAP Strategy Order Example, $\alpha = 0.75$}}{40}
+\contentsline {table}{\numberline {6.6}{\ignorespaces VWAP Strategy Performance}}{41}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
