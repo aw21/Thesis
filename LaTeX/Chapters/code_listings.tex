@@ -1,13 +1,46 @@
-In this section we include code listing for collecting and processing data. With this code, a user should be able to reproduce the experiment and run their own analysis. Code for the thesis can be found here: https://github.com/aw21/Thesis
+This appendix contains code written for several important sections of this thesis. With this code, the reader should be able to reproduce the experiment and run his or her own analysis. The full code used in this thesis can be found here: \url{https://github.com/aw21/Thesis}.
 
 \section{Software Dependencies}
+\begin{singlespacing}
 \lstinputlisting[language=Python, caption=Software Requirements, label=imports]{Code/imports}
+\end{singlespacing}
 
-\section{Data Collection}
-\lstinputlisting[language=Python, caption=Receiving LOB Data from Coinbase Pro]{Code/collect_data}\label{data-collection-code}
+\section{Raw Data Collection}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Receiving LOB Data From Coinbase Pro]{Code/collect_data}\label{data-collection-code}
+\end{singlespacing}
 
-\section{Data Processing}
-\lstinputlisting[language=Python, caption=Building the Shortened LOB]{Code/parse_file}\label{data-processing-code}
+\section{Raw Data Processing}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Building The Shortened LOB]{Code/parse_file}\label{data-processing-code}
+\end{singlespacing}
 
-\section{Correlated Poisson Variables}
-\lstinputlisting[language=Python, caption=Generating Correlated Poisson Variables using Copulas]{Code/correlated_poisson}\label{correlated-poisson}
+\section{Calculating Average Event Sizes and Arrival Rates}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Finding Average Event Sizes And Arrival Rates]{Code/aes_and_rate}\label{AES_and_rate_code}
+\end{singlespacing}
+
+\section{Calculating Arrival Correlations}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Finding Arrival Correlations]{Code/correlations}\label{correlation-code}
+\end{singlespacing}
+
+\section{Generating Correlated Poisson Variables}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Generating Correlated Poisson Variables Using Copulas]{Code/correlated_poisson}\label{correlated-poisson}
+\end{singlespacing}
+
+\section{Simulation with Market Orders}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Simulating LOB Events And Market Orders]{Code/simulation_code}\label{code:simulation}
+\end{singlespacing}
+
+\section{Trade Execution Testing}
+\begin{singlespacing}
+\subsection{TWAP Testing}
+\lstinputlisting[language=Python, caption=Performing TWAP Strategy Simulation]{Code/twap_code}\label{code:twap_code}
+\end{singlespacing}
+\subsection{VWAP Testing}
+\begin{singlespacing}
+\lstinputlisting[language=Python, caption=Performing VWAP Strategy Simulation]{Code/vwap_code}\label{code:vwap_code}
+\end{singlespacing}

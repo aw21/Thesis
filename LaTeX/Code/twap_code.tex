@@ -1,0 +1,12 @@
+def simulate_split_orders(num_minutes, A, num_trades):
+    order_size = A / num_trades
+    market_orders = []
+    for i in range(1,num_trades+1):
+        market_orders.append(((num_minutes*60)*i/(num_trades+1),order_size))
+    orders = simulate(average_price, starting_book, 0, num_minutes, 60, A, market_orders)
+    return orders
+    
+orders = simulate_split_orders(10, 40000, 8)
+print("VWAP: {}".format(vwap(orders)))
+for t,price,volume in orders:
+    print("{} {} {}".format(t,price,volume))

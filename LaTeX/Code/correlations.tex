@@ -1,0 +1,43 @@
+def updates_during_period(updates, update_times, start, end):
+    left_index = bisect.bisect_left(update_times, start)
+    right_index = bisect.bisect_right(update_times, end)
+    return updates[left_index: right_index + 1]
+    
+def updates_during_random_period(updates, update_times, starting_time, ending_time, size):
+    total_length = (ending_time - starting_time).total_seconds()
+    interval_start = starting_time + timedelta(seconds=np.random.uniform()*(total_length - size))
+    return updates_during_period(updates, update_times, interval_start, interval_start + timedelta(seconds=size))
+
+def updates_during_random_period_multiple_dates(size):
+    probabilities = [(e-s).total_seconds() - size for (s,e) in zip(starting_times, ending_times)]
+    probabilities = [p/sum(probabilities) for p in probabilities]
+    I = np.random.choice(len(all_updates), p=probabilities)
+    return updates_during_random_period(all_updates[I], all_update_times[I], starting_times[I], ending_times[I], size)
+    
+K = 10
+positive_updates = OrderedDict([(k,[]) for k in range(-K,K+1) if k != 0])
+negative_updates = OrderedDict([(k,[]) for k in range(-K,K+1) if k != 0])
+
+for _ in range(160000):
+    updates = updates_during_random_period_multiple_dates(60)
+    num_positive = OrderedDict([(k,0) for k in range(-K,K+1) if k != 0])
+    num_negative = OrderedDict([(k,0) for k in range(-K,K+1) if k != 0])
+    
+    for u in updates:
+        if u['change'] > 0:
+            num_positive[u['k']] += 1
+        else:
+            num_negative[u['k']] += 1
+            
+    for k in range(-K,K+1):
+        if k != 0:
+            positive_updates[k].append(num_positive[k])
+            negative_updates[k].append(num_negative[k])
+            
+observations = []
+for k in positive_updates:
+    observations.append(positive_updates[k])
+for k in negative_updates:
+    observations.append(negative_updates[k])
+sigma = np.corrcoef(observations)
+sigma

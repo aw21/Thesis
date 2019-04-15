@@ -1,12 +1,15 @@
 \section{Problem Description} \label{ch:problemdescription}
 
-This thesis analyzes a problem in quantitative finance known as the optimal trade execution problem. In essence, when trading a large volume of a security in a short amount of time, I seek to minimize “slippage”, which is the difference between the expected price of a security and the price at which the trade is actually executed. More formally, given a volume $V$ of a security to buy and a time limit $T$, I seek to limit the amount of money spent to acquire these shares. Similarly, we could be given an amount $V$ to sell and a time limit $T$, and seek to maximize the revenue received from selling the security. 
+This thesis analyzes a problem in quantitative finance known as the optimal trade execution problem. Often, an agent such as a hedge fund seeks to buy or sell a large volume of a specific security in a short amount of time. The goal of the optimal trade execution problem is to form a strategy to execute this trade at the most favorable prices. In the case of acquiring inventory, the agent seeks to minimize cost, and in the case of selling inventory, the agent seeks to maximize revenue.
 
-This problem is most relevant to a large institutional investor, such as a hedge fund, who may want to buy (respectively, sell) a large volume of a security because they believe that the price of the security will rise (fall), but find that there is not enough supply (demand) at the desired price level to satisfy the full order. If the full trade could be executed at the desired price, the hedge fund would want to execute the trade immediately in order to capture as much of the expected change in price as possible. However, the hedge fund would have to execute part of the trade at more unfavorable prices. They can instead choose to split the order over a longer time period to minimize slippage. In general, there is a trade-off between how quickly the desired position is achieved and the price impact of the trade.
+More formally, given a volume $V$ of shares to buy and a time limit $T$, the agent seeks to limit the amount of money spent to acquire these shares. The actual prices at which the agent can acquire the shares depend on the supply of the shares at different prices. Thus, if $V$ is high, the trade should not be executed in one order, since many of the shares are only available at higher prices. The agent can instead choose to split the order into smaller slices over time to realize lower prices overall. In general, there is a trade-off between how quickly the trade is executed and the market impact, so increased prices may be inevitable when $T$ is low. However, various strategies have been adopted to minimize the price impact of large trades.
 
+When evaluating the performance of trading strategies, the common industry benchmark of the Volume Weighted Average Price (VWAP) is used. If $V$ is acquired throughout the time frame in chunks of size $v_i$ and price $p_i$ where $\sum\limits_i{v_i} = V$, the VWAP is defined as 
 
-\section{Background} \label{ch:background}
-This problem can be illustrated more clearly by discussing the centralized limit order book (LOB). The LOB is the trading mechanism used by most exchanges around the world. The LOB for a security consists of the prices and volumes at which customers are willing to buy and sell the security (bids and asks respectively). For example, part of the LOB for Coca-Cola (KO) on the NYSE may look like Table~\ref{tab:coke1}, in which the 5 best bids and asks are listed:
+$$ \frac{\sum\limits_i{v_i p_i}}{\sum\limits_i{v_i}}$$
+
+\section{The Limit Order Book} \label{ch:background}
+This problem can be illustrated more clearly by discussing the centralized limit order book (LOB). The LOB is the trading mechanism used by most exchanges around the world. The LOB for a security consists of the prices and volumes at which customers are willing to buy and sell the security (bids and asks respectively) where the possible prices occur at increments of the tick size. For example, part of the LOB for Coca-Cola (KO) on the NYSE where the tick size is \$0.01 may look like Table~\ref{tab:coke1}, in which the 5 best bids and asks are listed:
 
 \begin{table}[htbp]
 \caption{Coca-Cola Limit Order Book} \label{tab:coke1}
@@ -26,9 +29,9 @@ Volume           & Price          & Price           & Volume          \\
 \end{center}
 \end{table}
 
-The price of the stock could be considered \$48.695, which is the midpoint between the best bid and best ask price. 
+The price of the stock is considered to be \$48.695, which is the midpoint between the best bid and best ask prices. 
 
-Say, for example, that the hedge fund receives a signal to buy 7000 shares of Coca-Cola. It could do so by issuing a market order, in which the trade is executed immediately at the best market price(s). If there is not enough supply at the best ask price, the order will progressively move up the order book until it is satisfied. In this case, it would buy 500 shares at \$48.70, 1500 shares at \$48.71, 3500 shares at \$48.72, and the remaining 1500 shares at \$48.75. It could also place a limit order, which is only executed at the specified price or better. For example, it could place a limit order for 7000 shares at \$48.67. This order would be appear in the bid side of the order book until it is matched with a market order from the ask side. The updated LOB is shown in Table~\ref{tab:coke2}.
+Say, for example, that the hedge fund receives a signal to buy 7000 shares of Coca-Cola. It could do so by issuing a market buy order, in which the trade is executed immediately at the best market price(s). If there is not enough supply at the best ask price, the order will progressively move up the order book until it is satisfied. In this case, it would buy 500 shares at \$48.70, 1500 shares at \$48.71, 3500 shares at \$48.72, and the remaining 1500 shares at \$48.75. In this case, the VWAP would be (500*48.70 + 1500*48.71 + 3500*48.72 + 1500*48.75)/7000 = \$48.723/share. It could also place a limit buy order, which is only executed at the specified price or better. For example, it could place a limit order for 7000 shares at \$48.67. This order would be appear in the bid side of the order book until it is matched with a sell order. The updated LOB is shown in Table~\ref{tab:coke2}.
 
 \begin{table}[htbp]
 \caption{Coca-Cola Updated Limit Order Book} \label{tab:coke2}
@@ -48,11 +51,7 @@ Volume           & Price          & Price           & Volume          \\
 \end{center}
 \end{table}
 
-Exchanges typically institute a time priority policy, which means that orders submitted at the same price are executed in the order at which they arrived. Although the limit order has a maximum price at execution, it is not guaranteed to execute unlike the market order. 
+Exchanges typically institute a time priority policy, which means that orders submitted at the same price are executed in the order at which they arrived. Although the limit order has a maximum price at execution, it is not guaranteed to execute like the market order. 
 
-Of course, it could also place multiple market or limit orders over time to achieve the desired position while minimizing market impact. Given a time horizon T and the state of the order book at each time step, we seek to find the optimal placement of market and limit orders to achieve the desired position. I will use the common industry benchmark of Volume Weighted Average Price (VWAP) to measure performance of our trading strategy:
-
-$$ \frac{\sum{\text{Volume} * \text{Price}}}{\sum{\text{Volume}}}$$
-
-In the case of market order example, the VWAP would be (500*48.70 + 1500*48.71 + 3500*48.72 + 1500*48.75)/7000 = \$48.723/share.
+Of course, the agent could also place multiple market or limit orders over time to acquire the inventory while minimizing market impact. Splitting the trade into multiple orders forms the basis of many optimal trade execution strategies.
 

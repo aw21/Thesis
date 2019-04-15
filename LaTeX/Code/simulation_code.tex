@@ -1,0 +1,137 @@
+def arrivals_during_time_period(AESs, average_rates, correlations, start_time, T):
+    correlated_normals = np.random.multivariate_normal(mean=[0 for _ in AESs], cov=correlations)
+    us = [norm.cdf(y) for y in correlated_normals]
+    num_arrivals = [inverse_PDF_Poisson(rate*T,u) for (rate,u) in zip(average_rates,us)]
+    labels = [(k,"pos") for k in range(-K,K+1) if k != 0] + [(k,"neg") for k in range(-K,K+1) if k != 0]
+    events = []
+    for i,n in enumerate(num_arrivals):
+        position, direction = labels[i]
+        for _ in range(n):
+            arrival_time = start_time + np.random.uniform()*T
+            arrival_size = min(np.random.exponential(AESs[i]),5000)
+            if direction == "neg":
+                arrival_size *= -1
+            events.append((arrival_time, arrival_size, position, False))
+    return events
+    
+def simulate(starting_ref_price, starting_book, starting_time, num_intervals, T, A, market_orders, rates=None):
+    ref_price = starting_ref_price
+    sizes = copy.copy(starting_book)
+    interval_start = starting_time
+    
+    # Find the market orders in each interval
+    orders_in_interval = OrderedDict([(i,[]) for i in range(num_intervals)])
+    i = 0
+    for order in market_orders:
+        if order[0] > starting_time + (i+1)*T:
+            i += 1
+        orders_in_interval[i].append(order)
+            
+    # Amount left to buy
+    a = A
+    
+    # Prices and amounts
+    filled_orders = []
+    
+    
+    for n in range(num_intervals):       
+        interval_start = n*T
+        if rates == None:
+            events = arrivals_during_time_period(AESs_vector, average_rates_vector, sigma, interval_start, T)
+        else:
+            events = arrivals_during_time_period(AESs_vector, rates[n], sigma, interval_start, T)
+        orders = [(t,-size,1,True) for (t,size) in orders_in_interval[n]]
+        # Finish ordering all that is left
+        if n == (num_intervals-1) and a > 0:
+            orders.append(((n+1)*T,-a,1,True))
+        all_events = sorted(events + orders, key=lambda x: x[0])
+        
+        for (t,change,k,is_order) in all_events:
+                
+            if is_order:
+                left_to_fill = min(-change,a)
+                p = round(ref_price + 0.5)
+                while p < 617 and sizes[p] < left_to_fill:
+                    if sizes[p] > 0:
+                        filled_orders.append((t,p,sizes[p]))
+                    left_to_fill -= sizes[p]
+                    sizes[p] = 0
+                    p += 1
+                if left_to_fill > 0:
+                    filled_orders.append((t,p,left_to_fill))
+                sizes[p] = max(0,sizes[p] - left_to_fill)
+                left_to_fill = 0
+                
+                a = max(0, a + change)
+            
+            else:    
+                # Negative event
+                if change < 0:
+                    # Check if first:
+                    if k < 0:
+                        price = round(ref_price + 0.5 + k)
+                        is_first = True
+                        for p in reversed(range(price + 1,round(ref_price + 0.5))):
+                            if sizes[p] > 0:
+                                is_first = False
+
+                        # If first, go down prices
+                        if is_first:
+                            p = price
+                            amount_left = -change
+                            while i > 0 and sizes[p] < amount_left:
+                                amount_left -= sizes[p]
+                                sizes[p] = 0
+                                p -= 1
+                            sizes[p] = max(0, sizes[p] - amount_left)
+                        # Otherwise, just subtract
+                        else:
+                            sizes[price] = max(0, sizes[price] + change) 
+
+                    else:
+                        price = round(ref_price - 0.5 + k)
+                        is_first = True
+                        for p in range(round(ref_price + 0.5),price):
+                            if sizes[p] > 0:
+                                is_first = False
+
+                        # If first, go down prices
+                        if is_first:
+                            p = price
+                            amount_left = -change
+                            while p < 1017 and sizes[p] < amount_left:
+                                amount_left -= sizes[p]
+                                sizes[p] = 0
+                                p += 1
+                            sizes[p] = max(0, sizes[p] - amount_left)
+                        else:
+                            sizes[price] = max(0, sizes[price] + change)
+
+                # Positive events
+                else:
+                    if k < 0:
+                        price = round(ref_price + 0.5 + k)
+                    else:
+                        price = round(ref_price - 0.5 + k)
+                    sizes[price] += change
+                
+            # Update ref price
+            for p in range(round(ref_price + 0.5),1017):
+                if sizes[p] != 0:
+                    first_ask_price = p
+                    break
+            for p in reversed(range(0,round(ref_price + 0.5))):
+                if sizes[p] != 0:
+                    first_bid_price = p
+                    break
+        
+            if (first_ask_price - first_bid_price) % 2 != 0:
+                ref_price = round(float(first_ask_price + first_bid_price) / 2,1)
+            else:
+                middle_price = round((first_ask_price + first_bid_price)/2)
+                if middle_price < ref_price:
+                    ref_price = round(middle_price + 0.5, 1)
+                else:
+                    ref_price = round(middle_price - 0.5, 1)
+                    
+    return filled_orders

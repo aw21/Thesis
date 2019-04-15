@@ -1,0 +1,49 @@
+K = 10
+def AES_and_Rate(updates, starting_times):
+    event_sizes_pos = OrderedDict([(k,[]) for k in range(-K,K+1) if k != 0])
+    event_sizes_neg = OrderedDict([(k,[]) for k in range(-K,K+1) if k != 0])
+    
+    for updates in all_updates:
+        for u in updates:
+            if u['change'] > 0:
+                event_sizes_pos[u['k']].append(u['change'])
+            else:
+                event_sizes_neg[u['k']].append(-u['change'])
+                
+    total_time = np.sum([(e-s).total_seconds() for s,e in zip(starting_times,ending_times)])
+                
+    AESs = OrderedDict([((k,"pos"),0) for k in range(-K,K+1) if k != 0] + \
+                       [((k,"neg"),0) for k in range(-K,K+1) if k != 0])
+    numbers_of_events = OrderedDict([((k,"pos"),0) for k in range(-K,K+1) if k != 0] + \
+                                   [((k,"neg"),0) for k in range(-K,K+1) if k != 0])
+    average_rates = OrderedDict([((k,"pos"),0) for k in range(-K,K+1) if k != 0] + \
+                                [((k,"neg"),0) for k in range(-K,K+1) if k != 0])
+    
+    for (k,sizes) in event_sizes_pos.items():
+        AESs[(k,"pos")] = np.mean(sizes)
+        numbers_of_events[(k,"pos")] = len(sizes)
+        
+    for (k,sizes) in event_sizes_neg.items():
+        AESs[(k,"neg")] = np.mean(sizes)
+        numbers_of_events[(k,"neg")] = len(sizes)
+        
+    for k in numbers_of_events:
+        average_rates[k] = numbers_of_events[k] / total_time
+        
+    return AESs, numbers_of_events, average_rates
+            
+
+AESs, numbers_of_events, average_rates = AES_and_Rate(all_updates, starting_times)
+
+for k in range(-K,K+1):
+    if k != 0:
+        print("k = {}".format(k))
+        print("AES Positive: {}".format(AESs[(k,"pos")]))
+        print("n = {}".format(numbers_of_events[(k,"pos")]))
+        print("Average Rate: {}".format(average_rates[(k,"pos")]))
+        print("Multiplied: {}".format(AESs[(k,"pos")]*average_rates[(k,"pos")]))
+        print("AES Negative: {}".format(AESs[(k,"neg")]))
+        print("n = {}".format(numbers_of_events[(k,"neg")]))
+        print("Average Rate: {}".format(average_rates[(k,"neg")]))
+        print("Multiplied: {}".format(AESs[(k,"neg")]*average_rates[(k,"neg")]))
+        print()

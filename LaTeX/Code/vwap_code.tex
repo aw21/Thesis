@@ -1,0 +1,29 @@
+def simulate_split_2rates_orders(num_minutes, A, num_trades, first_half_market_activity, first_half_trade_activity):
+    order_size_average = A / num_trades
+    order_size_first_half = order_size_average * first_half_trade_activity / 0.5
+    order_size_second_half = order_size_average * (1 - first_half_trade_activity) / 0.5
+    
+    market_orders = []
+    for i in range(1,num_trades+1):
+        if i <= num_trades / 2:
+            market_orders.append(((num_minutes*60)*i/(num_trades+1),order_size_first_half))
+        else:
+            market_orders.append(((num_minutes*60)*i/(num_trades+1),order_size_second_half))
+            
+    first_half_rates = [r*first_half_market_activity/0.5 for r in average_rates_vector]
+    second_half_rates = [r*(1-first_half_market_activity)/0.5 for r in average_rates_vector]
+
+    rates = OrderedDict([(n,None) for n in range(num_minutes)])
+    for n in range(num_minutes):
+        if n < num_minutes / 2:
+            rates[n] = first_half_rates
+        else:
+            rates[n] = second_half_rates
+            
+    orders = simulate(average_price, starting_book, 0, num_minutes, 60, A, market_orders,rates=rates)
+    return orders
+    
+orders = simulate_split_2rates_orders(10, 40000, 8, 0.75, 0.75)
+print("VWAP: {}".format(vwap(orders)))
+for t,price,volume in orders:
+    print("{} {} {}".format(t,price,volume))

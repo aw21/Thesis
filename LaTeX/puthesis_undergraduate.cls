@@ -130,9 +130,9 @@ purpose of scholarly research.\vspace*{.5in}\\ \\
 \def\makeacknowledgements{
   \ifx\@acknowledgements\undefined
   \else
-    \addcontentsline{toc}{section}{Acknowledgements}
+    \addcontentsline{toc}{section}{Acknowledgments}
     \begin{center}
-      \Large \textbf{Acknowledgements}
+      \Large \textbf{Acknowledgments}
     \end{center}
     \@acknowledgements
     \clearpage

@@ -1,0 +1,247 @@
+The simulated market environment can be used to assess the performance of a given trade execution strategy. Using this procedure, the agent can adjust its strategy to acquire its inventory goal at the most favorable price before executing the trade in reality. Section \ref{ch:strategies} provides an overview of common algorithmic trade execution strategies. Section \ref{ch:sim_results} evaluates the performance of the TWAP and VWAP strategies (see Subsection \ref{ch:impact-driven}) in the simulated market environment.
+
+\section{Trade Execution Strategies} \label{ch:strategies}
+Trade execution strategies can be broadly classified into impact-driven, cost-driven, and opportunistic algorithms (\cite{labadie:hal-00590283}). Nuanced trading strategies can be created using a combination of these algorithms.
+
+\subsection{Impact-Driven Algorithms} \label{ch:impact-driven}
+Impact-driven algorithms seek to minimize the market impact of a large trade by splitting it into slices of smaller trades over time. 
+
+Time Weighted Average Price (TWAP) algorithms split a large order of size $V$ into $n$ smaller orders of size $V/n$ uniformly over a time period $T$. In order to reduce predictability and prevent detection by third parties, modifications of TWAP where the size and timing of orders are slightly varied are often preferred. When simulating TWAP performance, the default TWAP strategy is used, assuming that no third party takes action upon detecting our TWAP strategy and that the market reacts as it normally would to our trades.
+
+Volume Weighted Average Price (VWAP) algorithms are similar to TWAP algorithms, but they divide the time period $T$ into sub-periods where the volume of market activity measurably differs. The size of the orders during each sub-period is proportional to its volume of market activity during that sub-period. The volume of market activity in each sub-period is typically predicted using historical data. VWAP strategies theoretically lower market impact compared to TWAP strategies by sending larger orders when there is more market activity (and thus higher LOB resiliency) and smaller orders when there is less market activity. However, they run the risk of incurring significantly higher execution costs if the historical data does not reflect market activity at the time of execution. The VWAP trading strategy should not be confused with the VWAP benchmark used to measure the performance of trade execution (Chapter \ref{ch:intro}).
+
+Percentage of Volume algorithms (POV), like VWAP, generate sizes of orders based on trading volume throughout the time period. However, they trade a fixed percentage of the current market volume based on a desired participation rate. For example, the agent may choose to submit orders so that are expected to comprise 5\% of the market activity in the period. Unlike the TWAP and VWAP algorithms that follow fixed trading schedules, POV algorithms have dynamically determined trading schedules.
+
+\subsection{Cost-Driven Algorithms}
+Cost-driven algorithms seek to minimize transaction costs, including market impact and market timing risks. In addition to market impact consideration taken in the impact-driven algorithms above, cost-driven algorithms adjust the time horizon of trades to account for market timing risks (i.e. orders for more volatile assets are executed in a shorter time horizon). Implementation Shortfall algorithms attempt to minimize the difference between the price at which the investor decides to make the trade and the average price at which the trade is executed. Market Close algorithms are similar to Implementation Shortfall algorithms, but the benchmark of comparison is the closing price.
+
+\subsection{Opportunistic Algorithms}
+Opportunistic algorithms seek to take advantage of favorable market conditions. Price Inline algorithms dynamically adjust trading patterns in response to the asset price (i.e. increasing trading activity when the price is low). Liquidity Driven algorithms take into account order book depth and availability of venues for trading. Pair Trading algorithms consist of buying one asset and selling another. If the assets are sufficiently correlated, the risks from one asset balance out the risks from the other. Pair Trading takes advantage of mean-reverting behavior to generate profit.
+
+
+\section{Trade Execution Simulation} \label{ch:sim_results}
+In this section, the performance of TWAP and VWAP strategies are tested in the simulated market environment.
+\subsection{The Initial LOB}
+To begin with an LOB that is representative of the market, the reference price is set to the time weighted average price of the asset rounded to the nearest mid-price. The volumes at the first $K=10$ surrounding bid and ask prices are set to the time weighted average volumes at those positions, and the volumes at other positions are set to 100. The LOB is maintained as simulation proceeds. The starting book is shown in Table \ref{tab:starting_LOB}.
+
+\begin{table}[htbp]
+\caption{Starting LOB for Simulation. $p_0 = 516.5$ cents} \label{tab:starting_LOB}
+\begin{center}
+\begin{tabular}{ll|ll}
+\hline \hline
+\multicolumn{2}{l|}{\textbf{Bids}} & \multicolumn{2}{l}{\textbf{Asks}} \\
+\hline
+Volume        & Price    & Price      & Volume      \\
+\hline
+587.93       & 516       & 517        & 495.79      \\
+1425.68      & 515       & 518        & 983.24      \\
+2328.27      & 514       & 519        & 1475.59     \\
+2735.44      & 513       & 520        & 2170.60     \\
+2578.26      & 512       & 521        & 2456.86     \\
+1338.90      & 511       & 522        & 1807.16     \\
+609.82       & 510       & 523        & 817.16      \\
+292.86       & 509       & 524        & 420.61      \\
+250.14       & 508       & 525        & 404.11      \\
+287.13       & 507       & 526        & 390.99             
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{TWAP Strategy}
+As described in Subsection \ref{ch:impact-driven}, the TWAP strategy consists of splitting the large trade into equally-sized smaller trades uniformly across the time period. The TWAP strategy is tested with a total trade size of $V = 40000$ over a period of $T = 10$ minutes and different numbers of orders to split the trade into.  An example is shown in Table \ref{tab:twap_order} where the trade is split into 8 orders of size 5000. As can be seen, the trade pushes the market price up while it is executed. The best ask price at the time of the first order is 517 and the best ask price at the time of the last order is 528 for a VWAP price of 524.820, about 8 cents higher than the starting reference price. See Listing \ref{code:twap_code} for the code written to simulate the orders resulting from a trade using the TWAP strategy.
+
+\begin{table}[htbp]
+\begin{center}
+\caption{TWAP Strategy Order Example} \label{tab:twap_order}
+\begin{tabular}{l|l|l|l}
+\hline \hline
+\multicolumn{4}{c}{\textbf{VWAP Price}: 524.820}                                      \\
+\hline
+\textbf{Time}                    & \textbf{Order Size}        & \textbf{Price} & \textbf{Volume}   \\
+\hline
+\multirow{5}{*}{66.67}  & \multirow{5}{*}{5000} & 517   & 682.696  \\
+                        &                          & 518   & 428.594  \\
+                        &                          & 519   & 2566.022 \\
+                        &                          & 520   & 1301.644 \\
+                        &                          & 521   & 21.044   \\
+\hline                   
+\multirow{5}{*}{133.33} & \multirow{5}{*}{5000} & 520   & 260.565  \\
+                        &                          & 521   & 1454.826 \\
+                        &                          & 522   & 2239.506 \\
+                        &                          & 523   & 490.201  \\
+                        &                          & 524   & 554.901  \\
+\hline                            
+\multirow{4}{*}{200.00} & \multirow{4}{*}{5000} & 522   & 62.550   \\
+                        &                          & 523   & 133.966  \\
+                        &                          & 524   & 3165.501 \\
+                        &                          & 525   & 1637.983 \\
+\hline                        
+\multirow{5}{*}{266.67} & \multirow{5}{*}{5000} & 521   & 302.563  \\
+                        &                          & 522   & 411.777  \\
+                        &                          & 523   & 584.960  \\
+                        &                          & 524   & 3541.595 \\
+                        &                          & 525   & 159.105  \\
+\hline                        
+\multirow{3}{*}{333.33} & \multirow{3}{*}{5000} & 524   & 684.054  \\
+                        &                          & 525   & 981.617  \\
+                        &                          & 526   & 3334.330 \\
+\hline                        
+\multirow{4}{*}{400.00} & \multirow{4}{*}{5000} & 525   & 891.352  \\
+                        &                          & 526   & 1403.401 \\
+                        &                          & 527   & 1557.507 \\
+                        &                          & 528   & 1147.739 \\
+\hline                        
+\multirow{4}{*}{466.67} & \multirow{4}{*}{5000} & 526   & 631.725  \\
+                        &                          & 527   & 2759.918 \\
+                        &                          & 528   & 1236.733 \\
+                        &                          & 529   & 371.624  \\
+\hline                        
+\multirow{3}{*}{533.33} & \multirow{3}{*}{5000} & 528   & 461.628  \\
+                        &                          & 529   & 583.475  \\
+                        &                          & 531   & 3954.897
+\end{tabular}
+\end{center}
+\end{table}
+
+The TWAP strategy was then tested with different numbers of orders in the trading schedule. Each trading schedule was tested 10000 times with the same starting LOB. The results are shown in Table \ref{tab:twap_strategy}.
+
+\begin{table}[htbp]
+\begin{center}
+\caption{TWAP Strategy Performance} \label{tab:twap_strategy}
+\begin{tabular}{l|l}
+\hline \hline
+\textbf{No. Orders} & \textbf{Mean VWAP Price (Standard Error)} \\
+\hline
+1                & 573.481 (0.084)            \\
+2                & 566.053 (0.116)            \\
+3                & 558.112 (0.130)            \\
+4                & 551.222 (0.139)            \\
+5                & 542.895 (0.136)            \\
+6                & 536.191 (0.120)            \\
+7                & 531.526 (0.096)            \\
+8                & 529.286 (0.081)            \\
+9                & 529.482 (0.082)            \\
+10               & 528.490 (0.070)            \\
+100              & 529.318 (0.061)           
+\end{tabular}
+\end{center}
+\end{table}
+
+As can be seen for this particular trade size, splitting the trade into a higher number of orders significantly lowers the mean cost up to about 8 orders. Looking at the standard errors, the variability of performance generally decreases as the number of orders increases (with the exception of using just one order). Although increasing the number of orders reduces average trading cost and risk, it has drawbacks in that it may incur extra costs from exchange commissions and is more easily detectable. These simulation results are useful for an agent looking to find the optimal number of slices to use in its TWAP strategy. 
+
+\subsection{VWAP Strategy}
+As described in \ref{ch:impact-driven}, the VWAP strategy consists of splitting trades like the TWAP strategy, but determining order sizes in proportion to the volume of market trades during different sub-periods. To simulate an environment with varying levels of trading activity, the 10 minute period is split in half, where a certain proportion $\alpha$ ($0 < \alpha < 1$) of the activity occurs in the first half and $1-\alpha$ of the activity occurs in the second half. 
+
+In order to maintain the same average volume of trades over the entire period, the rate of arrival $\lambda_k$ at a given position is adjusted as shown in Table \ref{tab:adjusted_rates}.
+
+\begin{table}[htbp]
+\caption{Adjusted Rates for VWAP Strategy Simulation} \label{tab:adjusted_rates}
+\begin{center}
+\begin{tabular}{l|l}
+\textbf{Subperiod}            & \textbf{Adjusted Rate}             \\
+\hline
+First Half  & $2 \alpha \lambda_k $    \\
+Second Half & $2 (1 - \alpha) \lambda_k$
+\end{tabular}
+\end{center}
+\end{table}
+
+The expected number of arrivals in the first half will be 
+$$2 \alpha \lambda_k T / 2 = \alpha \lambda_k T$$ 
+and the expected number of arrivals in the second half will be 
+$$2 (1-\alpha) \lambda_k T / 2 = (1-\alpha) \lambda_k T$$
+for a total of $$\lambda_k T$$
+
+Thus, on average, $\alpha$ proportion of arrivals will occur in the first half and $1-\alpha$ proportion of arrivals occur in the second half with the same average total number of arrivals as the constant rate case. The size of the orders will be adjusted in the same way. It should be noted that these trading conditions are somewhat unrealistic. Although it is possible that trading volume could differ significantly in a short time period, it is unlikely that the agent would be able to accurately and uniquely predict such a drastic change and act upon it. Nevertheless, this analysis shows the possibility of testing the performance of a trading strategy in a simulated environment with varying rates of market activity. Table \ref{tab:vwap_order} shows an example of the orders executed with a VWAP strategy split into 8 slices when $\alpha = 0.75$, where the size of the orders in the first half is 7500 and the size of the orders in the second half is 2500. Again, the price is pushed up. The best ask price at the time of the last order is 528 and the VWAP price is 522.507, about 6 cents higher than the starting reference price. See Listing \ref{code:vwap_code} for the code written to simulate the orders resulting from trades using the VWAP strategy.
+
+\begin{table}[htbp]
+\begin{center}
+\caption{VWAP Strategy Order Example, $\alpha = 0.75$} \label{tab:vwap_order}
+\begin{tabular}{l|l|l|l}
+\hline \hline
+\multicolumn{4}{c}{\textbf{VWAP Price}: 522.507}                                      \\
+\hline
+\textbf{Time}                    & \textbf{Order Size}        & \textbf{Price} & \textbf{Volume}   \\
+\hline
+\multirow{4}{*}{66.67}  & \multirow{4}{*}{7500} & 517 & 1071.610 \\
+                        &                       & 519 & 1907.321 \\
+                        &                       & 520 & 4116.339 \\
+                        &                       & 521 & 404.731  \\
+\hline
+\multirow{3}{*}{133.33} & \multirow{3}{*}{7500} & 518 & 2145.428 \\
+                        &                       & 521 & 4555.106 \\
+                        &                       & 522 & 799.466  \\
+\hline
+\multirow{6}{*}{200.00} & \multirow{6}{*}{7500} & 518 & 207.043  \\
+                        &                       & 519 & 856.150  \\
+                        &                       & 520 & 1513.202 \\
+                        &                       & 521 & 835.556  \\
+                        &                       & 522 & 1043.699 \\
+                        &                       & 523 & 3044.349 \\
+\hline
+\multirow{5}{*}{266.67} & \multirow{5}{*}{7500} & 521 & 507.424  \\
+                        &                       & 522 & 2825.699 \\
+                        &                       & 523 & 1860.746 \\
+                        &                       & 524 & 1134.190 \\
+                        &                       & 525 & 1171.941 \\
+\hline
+\multirow{3}{*}{333.33} & \multirow{3}{*}{2500} & 524 & 516.300  \\
+                        &                       & 525 & 1676.603 \\
+                        &                       & 526 & 307.097  \\
+\hline
+\multirow{3}{*}{400.00} & \multirow{3}{*}{2500} & 525 & 968.908  \\
+                        &                       & 527 & 759.657  \\
+                        &                       & 528 & 771.434  \\
+\hline
+\multirow{4}{*}{466.67} & \multirow{4}{*}{2500} & 525 & 357.558  \\
+                        &                       & 526 & 71.188   \\
+                        &                       & 527 & 807.992  \\
+                        &                       & 528 & 1263.263 \\
+\hline
+\multirow{3}{*}{533.33} & \multirow{3}{*}{2500} & 528 & 639.090  \\
+                        &                       & 529 & 117.624  \\
+                        &                       & 530 & 1743.286
+\end{tabular}
+\end{center}
+\end{table}
+
+Table \ref{tab:vwap_averages} shows the performance of the VWAP strategy (volume-adjusted trading) vs. the TWAP strategy (no volume-adjusted trading) for various $\alpha$ and numbers of orders. 
+
+It can be seen that for low numbers of orders (e.g. 4 orders), the TWAP strategy significantly outperforms the VWAP strategy, and this difference becomes more pronounced as $\alpha$ increases. This difference is likely due to the fact that the starting order book is the same in each case. Since orders in the first half of the VWAP strategy are larger, they reach farther into the order book and more units are bought at higher prices. Besides reaching farther into the order book, these orders have the additional market impact effect of increasing the price more in the first half. Thus, prices in the second half are higher even with lower trading activity.
+
+The difference is mitigated when the number of orders is increased since the smaller orders do not reach as far into the order book at the beginning of the trading period. However, the TWAP strategy still largely outperforms the VWAP strategy for $\alpha = 0.6$ and $\alpha = 0.7$, likely for similar reasons as described above. When both $\alpha$ and the numbers of orders are high (i.e. $\alpha = 0.8$ with 16 or 20 orders, $\alpha = 0.9$ with 12, 16, or 20 orders), the VWAP strategy outperforms the TWAP strategy. These cases are ideal for the VWAP strategy, since higher market activity in the first half means that the LOB recovers more quickly from the larger order sizes and the market impact is decreased. Although these conditions do not completely reflect a realistic market environment, these results show that an ideal VWAP strategy should take into account the market activity, number of orders, and depth of the LOB.
+
+\begin{table}[htbp]
+\begin{center}
+\caption{VWAP Strategy Performance} \label{tab:vwap_averages}
+\begin{tabular}{lll}
+\hline \hline
+\multicolumn{1}{l|}{}                  & \multicolumn{2}{l}{\textbf{Mean VWAP Price (Standard Error)}}                               \\ \hline
+\multicolumn{1}{l|}{\textbf{No. Orders}} & \multicolumn{1}{l|}{\textbf{Volume-Adjusted Trading}} & \textbf{No Volume-Adjusted Trading} \\ \hline
+\multicolumn{3}{l}{$\boldsymbol{\alpha = 0.6}$}                                                                                         \\ \hline
+\multicolumn{1}{l|}{4}                 & \multicolumn{1}{l|}{547.869 (0.156)}              & 545.642 (0.144)            \\
+\multicolumn{1}{l|}{8}                 & \multicolumn{1}{l|}{529.340 (0.085)}              & 528.208 (0.071)            \\
+\multicolumn{1}{l|}{12}                & \multicolumn{1}{l|}{528.065 (0.068)}              & 527.514 (0.059)            \\
+\multicolumn{1}{l|}{16}                & \multicolumn{1}{l|}{527.674 (0.059)}              & 527.383 (0.052)            \\
+\multicolumn{1}{l|}{20}                & \multicolumn{1}{l|}{527.840 (0.057)}              & 527.366 (0.050)            \\ \hline
+\multicolumn{3}{l}{$\boldsymbol{\alpha = 0.7}$}                                                                                         \\ \hline
+\multicolumn{1}{l|}{4}                 & \multicolumn{1}{l|}{547.437 (0.158)}              & 541.349 (0.142)            \\
+\multicolumn{1}{l|}{8}                 & \multicolumn{1}{l|}{529.788 (0.093)}              & 528.257 (0.067)            \\
+\multicolumn{1}{l|}{12}                & \multicolumn{1}{l|}{528.086 (0.072)}              & 527.576 (0.059)            \\
+\multicolumn{1}{l|}{16}                & \multicolumn{1}{l|}{527.692 (0.063)}              & 527.492 (0.055)            \\
+\multicolumn{1}{l|}{20}                & \multicolumn{1}{l|}{527.500 (0.057)}              & 527.513 (0.052)            \\ \hline
+\multicolumn{3}{l}{$\boldsymbol{\alpha = 0.8}$}                                                                                         \\ \hline
+\multicolumn{1}{l|}{4}                 & \multicolumn{1}{l|}{548.495 (0.152)}              & 537.137 (0.133)            \\
+\multicolumn{1}{l|}{8}                 & \multicolumn{1}{l|}{530.943 (0.105)}              & 529.014 (0.072)            \\
+\multicolumn{1}{l|}{12}                & \multicolumn{1}{l|}{528.423 (0.076)}              & 528.485 (0.063)            \\
+\multicolumn{1}{l|}{16}                & \multicolumn{1}{l|}{527.707 (0.066)}              & 528.463 (0.064)            \\
+\multicolumn{1}{l|}{20}                & \multicolumn{1}{l|}{527.502 (0.059)}              & 528.692 (0.063)            \\ \hline
+\multicolumn{3}{l}{$\boldsymbol{\alpha = 0.9}$}                                                                                         \\ \hline
+\multicolumn{1}{l|}{4}                 & \multicolumn{1}{l|}{550.013 (0.148)}              & 534.170 (0.124)            \\
+\multicolumn{1}{l|}{8}                 & \multicolumn{1}{l|}{531.776 (0.110)}              & 530.629 (0.077)            \\
+\multicolumn{1}{l|}{12}                & \multicolumn{1}{l|}{528.574 (0.080)}              & 530.484 (0.076)            \\
+\multicolumn{1}{l|}{16}                & \multicolumn{1}{l|}{527.674 (0.066)}              & 530.641 (0.075)            \\
+\multicolumn{1}{l|}{20}                & \multicolumn{1}{l|}{527.373 (0.060)}              & 530.816 (0.076)           
+\end{tabular}
+\end{center}
+\end{table}

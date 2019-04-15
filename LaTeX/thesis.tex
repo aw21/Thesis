@@ -12,14 +12,18 @@
 \usepackage{algorithm2e}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{multirow}
+\usepackage{bm}
 \RestyleAlgo{boxruled}
+\usepackage{courier}
+
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \lstset{ %
   backgroundcolor=\color{white},   % choose the background color
-  basicstyle=\footnotesize,        % size of fonts used for the code
+  basicstyle=\footnotesize\ttfamily,        % size of fonts used for the code
   breaklines=true,                 % automatic line breaking only at whitespace,
   postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
   commentstyle=\color{mygreen},    % comment style
@@ -37,11 +41,10 @@
 %Included for Gather Purpose only in WinEdt (ignore for other editors):
 %input "./Bibliography/refs.bib"
 
-\title{Using Simulated Limit Order Book Data To Evaluate Optimal Trade Execution Algorithms: Interim Report}
-\submitted{June 2019}  %graduation date
+\title{Using Simulated Limit Order Book Data To Evaluate Trade Execution Strategies}
+\submitted{April 16, 2019}
 \author{Andrew Wang}
-\advisor{Professor Mykhaylo Shkolnikov} %
-%\dedication{To me}
+\advisor{Professor Mykhaylo Shkolnikov}
 
 
 \abstract{
@@ -52,34 +55,34 @@
 \input{Chapters/acknowledgments}
 }
 
+\dedication{Lapidibus Aequus Durando}
+
 \begin{document}
 
-\chapter{Summary of Progress}\label{ch:progress}
-\input{Chapters/progress}
+\chapter{Introduction}\label{ch:intro}
+\input{Chapters/introduction}
 
-\chapter{Timeline}
-\input{Chapters/timeline}
-
-\chapter{Introduction}\label{ch:intro}  %insert chapter title
-\input{Chapters/introduction} % and path to the .tex file (no need to include .tex)
-
-\chapter{Preliminary Literature Review}\label{ch:litreview}
+\chapter{Literature Review}\label{ch:litreview}
 \input{Chapters/literature_review}
 
 \chapter{Data Source}\label{ch:data_source}
 \input{Chapters/data}
 
-\chapter{Experimental Procedure}\label{ch:experiment}
+\chapter{Modelling the LOB}\label{ch:experiment}
 \input{Chapters/experiment}
 
-\chapter{Analysis}
-\input{Chapters/analysis}
+\chapter{Simulating the LOB} \label{ch:simulation}
+\input{Chapters/simulation}
 
-\chapter{Code Listings}
-\input{Chapters/code_listings.tex}
+\chapter{Evaluating Trade Execution Performance} \label{ch:trade_execution}
+\input{Chapters/trade_execution}
 
 \chapter{Conclusion}
 \input{Chapters/conclusion}
+
+\appendix
+\chapter{Code Listings}
+\input{Chapters/code_listings.tex}
 
 \bibliographystyle{apa}
 \bibliography{Bibliography/refs} \label{bib}

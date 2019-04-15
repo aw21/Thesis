@@ -166,7 +166,8 @@ def processed_updates(file_name,K):
 
     combined_updates = sorted(combined_updates,key=lambda u:u['time'])
     
-    return starting_time, combined_updates
+    ending_time = combined_updates[-1]['time']
+    
+    return starting_time, ending_time, combined_updates
 
-starting_time, combined_updates = processed_updates('12_28_18.json',10)
-len(combined_updates)
+starting_times, ending_times, time_period_updates = zip(*[processed_updates(f,10) for f in ['12_28_18.json','12_29_18.json','12_30_18.json']])

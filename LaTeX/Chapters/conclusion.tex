@@ -1,3 +1,24 @@
-Here, I will summarize the experiment, results, and performance of the model.
-\section{Future Work}
-Here, I will discuss future work that could improve a part of the model (simulating the LOB, overcoming limitations, etc.) and how this work could be applied to gain additional insights.
+\section{Summary of Results}
+In this thesis, a modified version of the queuing model developed by \cite{A6} was used to simulate LOB dynamics. Data from the ETC-USD market of the Coinbase Pro Exchange was used to develop the model and estimate parameters. Several aspects of the original model were validated from the data set, such as the fact that arrivals at individual positions marginally follow Poisson processes. Other aspects were adjusted in the new model to better fit the observed data. Positive and negative arrivals of events at different bid and ask positions were found to be significantly correlated, so they were jointly modelled as a multivariate Poisson process. The sizes of these events were modelled as exponential random variables. 
+
+The model was used to artificially simulate the behavior of an LOB over time. This simulated market environment was used to evaluate the performance of TWAP and VWAP trade execution strategies when acquiring a large amount of inventory in a short period of time, with the agent's trades impacting the LOB dynamics in real time. The performance of TWAP strategies improved as the number of orders increased, with diminishing returns after a certain point. The VWAP strategy outperformed the TWAP strategy when the volume activity in the market varied substantially throughout the time period and the number of orders was sufficiently large.
+
+\section{Future Research}
+\subsection{Improving the Queuing Model}
+Several improvements could possibly make the queuing model more accurately reflect real-life LOB dynamics. 
+
+As in the model used by \cite{A6}, negative arrivals could be split into cancellation orders and market orders where their arrival rates are estimated separately. This differentiation would eliminate the need for the part of the model where negative events at the best bid or ask price are assumed to be market orders and negative events elsewhere are assumed to be limit order cancellations. Unfortunately, because Coinbase Pro does not specify the types of its negative updates, this differentiation is not possible with our data set, but it may be possible using a different data set.
+
+The model also assumes that arrivals at each position are independent of the current state of the LOB. In \cite{A6}, for example, the arrival rates differ based on the depth of the LOB at the given price. Rates are also affected by whether the price is the best bid or ask price. Although different LOB states likely affect arrival behavior, there was not enough data collected to estimate the rates given different LOB states. More data is needed to consistently estimate these parameters. The same can be said about the size of arrivals, which may not be independent of the LOB state.
+
+The arrival rate and average event size estimates mean that the LOB evolves over time purely from endogenous activity (besides the agent's activity). Exogenous effects could also be introduced in the model if the price of the asset is expected to drift up or down over time (e.g. from a price shock). 
+
+\subsection{Further Trading Execution Strategy Testing}
+In Section \ref{ch:sim_results}, the performance of two simple, widely used strategies TWAP and VWAP were tested. Different strategies such as the ones described in Section \ref{ch:strategies} could also be evaluated in the simulated environment. The simulation program at the moment only allows for trading schedules that contain just market orders, as it is the only type of order needed for the TWAP and VWAP strategies. It could be expanded to allow for additional agent activities such as limit orders, stop-loss orders, and order cancellations that are used in more advanced strategies. 
+
+Since the model adjusts LOB dynamics based on agent actions, it could be used to expand upon the studies performed \cite{A3} and \cite{A4} that use reinforcement learning to tackle optimal trade execution problems. Reinforcement learning could be applied and tested within the simulated market environment. 
+
+The model could also incorporate multiple players with different behaviors. For example, trade execution strategies could be tested in the presence of an antagonistic player that reacts to an agent's actions or with multiple players using different trading strategies.
+
+\subsection{Applying the Model to Different Securities}
+Finally, the work in this thesis is broadly applicable to modelling the behavior of LOBs for securities across different exchanges. High frequency LOB data is available for many exchanges that broker trades of stocks, options, futures, and other securities. For example, \url{https://lobsterdata.com} offers high frequency LOB data for equities on the NASDAQ exchange. Data like LOBSTER could be used to model the behavior of different securities' LOBs. Trade execution strategies could be tested using the simulation methods from this thesis with adjustments made to reflect different characteristics and trading rules of the exchange.
