@@ -4,6 +4,6 @@ My name is Andrew Wang and I'm a senior at Princeton University in the class of 
 
 # Contents
 
-* **data: ** LOB data used for analysis: json and pkl format
-* **Analysis: ** Data analysis in Jupyter notebooks
-* **LaTeX: ** LaTeX writeup
+* __data:__ LOB data used for analysis: json and pkl format
+* __Analysis:__ Data analysis in Jupyter notebooks
+* __LaTeX:__ LaTeX writeup
