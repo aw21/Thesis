@@ -13,7 +13,7 @@ asyncio==3.4.3
 asynctest==0.12.2
 atomicwrites==1.2.1
 attrs==18.2.0
-autobahn==18.12.1
+autobahn==20.12.3
 Babel==2.6.0
 backcall==0.1.0
 backports.os==0.1.1
